@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div id="lotto">
         <h1>PLAY LOTTO</h1>
@@ -17,39 +19,40 @@
     </div>
     <script>
 
-        var makeLotto = function() {
+        var makeLotto = function () {
             var numbers = [];
-            var lotto=[];
-            var lottoColor = ["red","blue","yellow","gray","green"];
-            for(var i=1;i<=45;i++) {
+            var lotto = [];
+            var lottoColor = ["red", "blue", "yellow", "gray", "green"];
+            for (var i = 1; i <= 45; i++) {//45까지집어넣기
                 numbers.push(i);
             }
-            for(var j = 0;j<6;j++){
-                var random = Math.floor( Math.random()*numbers.length );
+            for (var j = 0; j < 6; j++) {//중복안되는숫자6개뽑기
+                var random = Math.floor(Math.random() * numbers.length);
                 lotto.push(numbers[random]);
-                numbers.splice(random,1);
+                numbers.splice(random, 1); //잘라서 같은거 안나오게
             }
-            lotto.sort( function(a,b){ return a-b});
-            var tempDiv = document.createElement("div");
-            for(var k=0;k<6;k++){
-                var color=Math.floor(lotto[k]/10);
+            lotto.sort(function (a, b) { return a - b });//숫자정렬
+            var tempDiv = document.createElement("div"); //요소를 만든다 <div></div>생성
+            for (var k = 0; k < 6; k++) {//숫자마다 css적용 tempDiv에 값들 들어있음
+                var color = Math.floor(lotto[k] / 10);
                 console.log("makeLotto -> color", color)
-                tempDiv.innerHTML+="<span class='"+lottoColor[color]+"'>"+lotto[k]+"</span>";
+                tempDiv.innerHTML += "<span class='" + lottoColor[color] + "'>" + lotto[k] + "</span>";
             }
-            lottoBox.appendChild(tempDiv);
+            lottoBox.appendChild(tempDiv); //id= lottoBox안에 자식으로 태그 계속 집어넣음
             //console.log();
         }
-        var gameNum = document.querySelector("#gameNum");
+        var gameNum = document.querySelector("#gameNum");//css 선택자 붙은거 선택
         var btnLotto = document.querySelector(".btnLotto");
         var lottoBox = document.querySelector("#lottoBox");
         var lottoDiv = document.querySelector("#lotto");
         //console.log(lottoDiv.innerHTML);
-        btnLotto.addEventListener("click",function(){
+        btnLotto.addEventListener("click", function () {
             //console.log("click");
-            for(var i=0;i<gameNum.value;i++){
+            for (var i = 0; i < gameNum.value; i++) {
                 makeLotto();
             }
         });
     </script>
 </body>
+
 </html>

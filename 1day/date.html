@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         var current = new Date();
         var date = current.getDate();
+        console.log("date", date)
         var day = current.getDay();
+        console.log("day", day)
         var year = current.getFullYear();
+        console.log("year", year)
         var month = current.getMonth();
+        console.log("month", month)
         //var yoil = new Array("일","월","화","수","목","금","토");
-        var yoil = ["일","월","화","수","목","금","토"];
-        var dal = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-        console.log(yoil.slice(0,3)); 
-        console.log(yoil[day]+"요일");
-        console.log(dal[month],date,year);
+        var yoil = ["일", "월", "화", "수", "목", "금", "토"];
+        var dal = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        console.log(yoil.slice(0, 3));
+        console.log(yoil[day] + "요일");
+        console.log(dal[month], date, year);
         var date = new Date();
+        console.log(date);
     </script>
 </body>
+
 </html>
