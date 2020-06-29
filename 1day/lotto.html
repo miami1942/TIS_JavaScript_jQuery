@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="lotto">
+        <h1>PLAY LOTTO</h1>
+        <input type="number" name="" id="gameNum">
+        <button class="btnLotto">CLICK</button>
+        <div id="lottoBox">
+
+        </div>
+    </div>
+    <script>
+
+        var makeLotto = function() {
+            var numbers = [];
+            var lotto=[];
+            var lottoColor = ["red","blue","yellow","gray","green"];
+            for(var i=1;i<=45;i++) {
+                numbers.push(i);
+            }
+            for(var j = 0;j<6;j++){
+                var random = Math.floor( Math.random()*numbers.length );
+                lotto.push(numbers[random]);
+                numbers.splice(random,1);
+            }
+            lotto.sort( function(a,b){ return a-b});
+            var tempDiv = document.createElement("div");
+            for(var k=0;k<6;k++){
+                var color=Math.floor(lotto[k]/10);
+                console.log("makeLotto -> color", color)
+                tempDiv.innerHTML+="<span class='"+lottoColor[color]+"'>"+lotto[k]+"</span>";
+            }
+            lottoBox.appendChild(tempDiv);
+            //console.log();
+        }
+        var gameNum = document.querySelector("#gameNum");
+        var btnLotto = document.querySelector(".btnLotto");
+        var lottoBox = document.querySelector("#lottoBox");
+        var lottoDiv = document.querySelector("#lotto");
+        //console.log(lottoDiv.innerHTML);
+        btnLotto.addEventListener("click",function(){
+            //console.log("click");
+            for(var i=0;i<gameNum.value;i++){
+                makeLotto();
+            }
+        });
+    </script>
+</body>
+</html>

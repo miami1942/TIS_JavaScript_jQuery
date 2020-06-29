@@ -1,0 +1,94 @@
+$main-color:#f00;
+$radius:5px;
+$color: #E13E06;
+@mixin center() {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+@function makelongshadow($color) {
+    $val: 0px 0px $color;
+    @for $i from 1 through 1000 {
+      $val: #{$val}, #{$i}px #{$i}px #{$color};
+    }
+    @return $val;
+  }
+  
+  @mixin longshadow($color) {
+    text-shadow: makelongshadow($color);
+  }
+
+
+
+#lotto {
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+        @include longshadow(#f00);
+        &:hover {
+            color:$main-color;
+        }
+        &:before {
+
+        }
+    }
+    #gameNum {
+        height: 40px;
+        font-size: 12px;
+        color:#f00;
+        line-height: 40px;
+        border: 1px solid #000;
+        border-radius: $radius;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+    .btnLotto {
+        width:80px;
+        height: 40px;
+        color:#fff;
+        background-color: #000;
+        outline: none;
+        border:none;
+        vertical-align: middle;
+        border-radius: $radius;
+    }
+    #lottoBox {
+        padding:50px 0;
+        text-align: center;
+        div {
+            span {
+                display: inline-block;
+                width:40px;
+                height: 40px;
+                margin: 0 5px;
+                color:#fff;
+                line-height: 40px;
+                background-color: #000;
+                border-radius: 100px;
+                &.red {
+                    background-color: #f00;
+                }
+                &.blue {
+                    background-color: rgb(0, 98, 255);
+                }
+                &.yellow {
+                    background-color: rgb(235, 138, 11);
+                }
+                &.gray {
+                    background-color: rgb(134, 134, 134);
+                }
+                &.green {
+                    background-color: rgb(51, 255, 0);
+                }
+                
+            }
+        }
+    }
+}
+.box {
+    width:50px;
+    height: 50px;
+    background-color: #000;
+    @include center();
+}

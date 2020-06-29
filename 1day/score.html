@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        var kor = 92;
+        var eng = 85;
+        var math = 42;
+        var total = kor+eng+math;
+        var avg = total/3;
+        console.log("avg", avg);
+        if(avg>=90) {
+            document.write("A");
+        } else if(avg>=80) {
+            document.write("B");
+        } else if(avg>=70) {
+            document.write("C");
+        } else if(avg>=60) {
+            document.write("D");
+        } else {
+            document.write("F");
+        }
+        /*
+        if( avg > 50) {
+            document.write("통과");
+        } else {
+            document.write("땡");
+        }
+        */
+    </script>
+</body>
+</html>
