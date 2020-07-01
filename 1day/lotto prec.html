@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/main.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                 var j = Math.floor(lotto_arr[i] / 10);
                 lotto_div.innerHTML += "<span class='" + color_arr[j] + "'>" + lotto_arr[i] + "</span>";
             }
-            //q_lottoBox.appendChild(lotto_div);
+            q_lottoBox.appendChild(lotto_div);
 
             return lotto_arr;
         }
