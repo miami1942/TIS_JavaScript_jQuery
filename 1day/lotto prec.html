@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="lotto">
+        <h1>PLAY LOTTO</h1>
+        <input type="number" name="" id="gameNum">
+        <button class="btnLotto">CLICK</button>
+        <div id="price">
+
+        </div>
+        <div id="lottoBox">
+
+        </div>
+    </div>
+    <script>
+        //랜덤번호 만들고 일치하는지 검사.
+        var q_btnLotto = document.querySelector(".btnLotto");
+        var q_lottoBox = document.querySelector("#lottoBox");
+        var q_price = document.querySelector("#price");
+        var total_price = 0;
+
+        var lotto_play = function () {
+            var num_arr = new Array();
+            var lotto_arr = new Array();
+            var color_arr = new Array();
+            color_arr = ["red", "blue", "yellow", "gray", "green"];
+
+            total_price++;
+            q_price.innerHTML = total_price / 10 + "만원";
+
+            for (var i = 1; i < 46; i++) { //로또숫자 1~45 기입
+                num_arr.push(i);
+            }
+            for (var i = 0; i < 6; i++) {//6개 빼기
+                var random_num = Math.floor(Math.random() * num_arr.length);
+                lotto_arr.push(num_arr[random_num]);
+                num_arr.splice(random_num, 1);
+            }
+            lotto_arr.sort(function (a, b) { return a - b });
+
+            var lotto_div = document.createElement("div");
+            for (var i = 0; i < 6; i++) {
+                var j = Math.floor(lotto_arr[i] / 10);
+                lotto_div.innerHTML += "<span class='" + color_arr[j] + "'>" + lotto_arr[i] + "</span>";
+            }
+            //q_lottoBox.appendChild(lotto_div);
+
+            return lotto_arr;
+        }
+        var collect_num = function () {
+            var collect_num_arr = new Array();
+            var collect_lotto_arr = new Array();
+
+            for (var i = 1; i < 46; i++) { //로또숫자 1~45 기입
+                collect_num_arr.push(i);
+            }
+            for (var i = 0; i < 6; i++) {//6개 빼기
+                var random_num = Math.floor(Math.random() * collect_num_arr.length);
+                collect_lotto_arr.push(collect_num_arr[random_num]);
+                collect_num_arr.splice(random_num, 1);
+            }
+            return collect_lotto_arr;
+        }
+
+        q_btnLotto.addEventListener("click", function () {
+            q_lottoBox.innerHTML = "";
+            var my_collect_num = collect_num();
+            for (var i = 0; i < gameNum.value; i++) {
+                var my_lotto_arr = lotto_play();
+                if (collect_num === my_lotto_arr) {//배열 비교 어캐함?
+                    q_lottoBox.innerHTML = "";
+                    q_lottoBox.innerHTML = "축하합니다!! </br> 당첨입니다 </br>" +
+                        "당첨번호는 " + collect_num + " 입니다.";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

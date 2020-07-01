@@ -39,9 +39,11 @@
                 tempDiv.innerHTML += "<span class='" + lottoColor[color] + "'>" + lotto[k] + "</span>";
             }
             lottoBox.appendChild(tempDiv); //id= lottoBox안에 자식으로 태그 계속 집어넣음
+            //선택한  lottoBox 안에 자식요소인 tempDiv를 추가한다.
             //console.log();
         }
-        var gameNum = document.querySelector("#gameNum");//css 선택자 붙은거 선택
+        var gameNum = document.querySelector("#gameNum");
+        //css 선택자로(id나 클래스등) html에 있는 요소를 선택하게 해준다. 중복x 하나만 반환
         var btnLotto = document.querySelector(".btnLotto");
         var lottoBox = document.querySelector("#lottoBox");
         var lottoDiv = document.querySelector("#lotto");
