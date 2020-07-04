@@ -34,15 +34,17 @@ a,span,strong,img,iframe,input 등을 제외한 나머지것들.. */
     font-size:16px;
 } */
 
-#header {position: absolute;width:100%;height:91px;overflow:hidden; color:#fff;
+#header {position: absolute;width:100%;height:91px; color:#fff;
 transition:height 0.5s,background-color 0.5s;
+z-index: 999;
 }
-#header.on {height:400px;background-color: rgba(255,255,255,0.5);}
+#header.on #gnb {height:400px;background-color: rgba(0,0,0,0.5);}
 #header:after {content:"";display:block; position: absolute;top:90px;width:100%;height:1px; background-color: #fff;}
-#gnb {text-align: center;}
+#gnb {text-align: center; height: 90px; overflow: hidden; transition:  all 0.5s;}/*히든이 걸려야 90일때 짤린다.*/
 #gnb .list {display:inline-block;margin:0 auto;}
 #gnb .list > li {float:left;}
-#gnb .list > li .depth01 {font-size:20px;font-weight: 900;
+#gnb .list > li .depth01 {
+    font-size:20px;font-weight: 900;
     display:block;
     height:90px;
     line-height:90px;
@@ -78,3 +80,44 @@ position: absolute;top:40%;width:100%;out line: 1px solid #f00;
 /* 중앙정렬하고 위치도 옮겨 놓는다.
 mainVisual 안에 있는 폰트의 크기를 22px로 하고 줄간격은 1.5로 한다.
 그중에 strong의 크기는 75px로 한다. strong의 두께는 700으로 한다. */
+
+#utilMenu {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: 3;
+}
+#utilMenu .btnOnline {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    width: 110px;
+}
+#utilMenu .btnAll {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    height: 22px;
+    width: 30px;
+}
+#utilMenu .btnAll span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+#utilMenu .btnAll span:nth-child(1) {
+    top: 0;
+}
+#utilMenu .btnAll span:nth-child(2) {
+    top: 10px;
+}
+#utilMenu .btnAll span:nth-child(3) {
+    top: 20px;
+}

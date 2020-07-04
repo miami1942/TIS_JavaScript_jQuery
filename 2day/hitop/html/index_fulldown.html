@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HITOP</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/layout_fulldown.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/js.cookie.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+    <script src="../js/main_fulldown.js" defer></script>
+</head>
+
+<body>
+    <!-- 영역은 div로 코딩 만약 영역이 의미를 가진다면 header나 footer section article 등으로
+    코딩해주면 좋습니다. -->
+    <header id="header">
+        <h1 id="logo"><a href="index.html"><img src="../images/layout/logo.png" alt=""></a></h1>
+        <!-- 
+            inline 태그 종류
+            a,span,em,strong,form,input,butto,select,textarea  등등
+         -->
+        <nav id="gnb" class="clearFix">
+            <ul class="list">
+                <li>
+                    <a href="" id="gnb01" class="depth01">Company</a>
+                    <ul class="depth02">
+                        <li><a href="" class="red">사업개요</a></li>
+                        <li><a href="ceo.html">인사말</a></li>
+                        <li><a href="">경영이념</a></li>
+                        <li><a href="history.html">회사연혁</a></li>
+                        <li><a href="" class="red">CI소개</a></li>
+                        <li><a href="">조직도</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" id="gnb02" class="depth01">Business</a>
+                    <ul class="depth02">
+                        <li><a href="">경관용포장재</a></li>
+                        <li><a href="">기능성포장재</a></li>
+                        <li><a href="">조립식바닥재</a></li>
+                        <li><a href="">스포츠필드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" id="gnb03" class="depth01">PR</a>
+                    <ul class="depth02">
+                        <li><a href="">특허인증</a></li>
+                        <li><a href="">시공실적</a></li>
+                        <li><a href="">시공사진</a></li>
+                        <li><a href="">카탈로그</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" id="gnb04" class="depth01">Customer</a>
+                    <ul class="depth02">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">나라장터 등록물품</a></li>
+                        <li><a href="">견적문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" id="gnb05" class="depth01">Recruit</a>
+                    <ul class="depth02">
+                        <li><a href="">인재상</a></li>
+                        <li><a href="">인사&amp;복지</a></li>
+                        <li><a href="">채용공고</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- <div class="clearFix"></div> -->
+        </nav>
+        <div id="utilMenu">
+            <a href="" class="btnOnline">온라인 견적문의</a>
+            <a href="" class="btnAll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- <div class="line"></div> -->
+        <!-- nav는 네비게이션의  역할을 수행할때 쓰는 태그이다.-->
+    </header>
+    <!-- header end -->
+    <div id="mainVisual">
+        <!-- <div class="txtMotion">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="mainCopy">
+                        <p class="red"><strong>High <span class="red">Technology</span> TOP Peoples</strong></p>
+                        <p>
+                            아름답고 쾌적한 거리, 안전하고 차별화 된 공간을 원하십니까? <br>
+                            최고의 기술을 가진 최상의 조직! 자연을 닮은 제품을 제공하는 하이탑입니다.
+                        </p>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="mainCopy">
+                        <p class="red"><strong>High <span class="red">Performace</span> TOP Peoples</strong></p>
+                        <p>
+                            아름답고 쾌적한 거리, 안전하고 차별화 된 공간을 원하십니까? <br>
+                            최고의 기술을 가진 최상의 조직! 자연을 닮은 제품을 제공하는 하이탑입니다.
+                        </p>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="mainCopy">
+                        <p class="red"><strong>MOVING TOGETHER
+                            <span class="red">TOWARDS FUTURE</span> TOP Peoples</strong></p>
+                        <p>
+                            아름답고 쾌적한 거리, 안전하고 차별화 된 공간을 원하십니까? <br>
+                            최고의 기술을 가진 최상의 조직! 자연을 닮은 제품을 제공하는 하이탑입니다.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+        <div class="mask">
+            <ul class="visualList swiper-wrapper">
+                <li class="visual01 swiper-slide">
+                    <div class="img">
+                        모래사장 배경
+                    </div>
+                </li>
+                <li class="visual02 swiper-slide">
+                    <div class="img">
+                        눈덮힌 산 배경
+                    </div>
+                </li>
+                <li class="visual03 swiper-slide">
+                    <div class="img">
+                        안개 가득한 숲속 배경
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="btnPrev"><img src="../images/main/btn_prev.png" alt="이전 슬라이드 보기"></button>
+        <button class="btnNext"><img src="../images/main/btn_next.png" alt="다음 슬라이드 보기"></button>
+        <div class="pager">
+            <span class="btns">
+
+            </span>
+            <span class="auto">
+                <button class="btnPause">
+                    <i class="xi-pause-circle-o"></i>
+                </button>
+                <button class="btnAuto">
+                    <i class="xi-play-circle-o"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <!-- mainVisual end -->
+    <div id="mainMenu">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <p>최고의 기술, 최상의 조직</p>
+                            <h2>ABOUT<br>COMPANY</h2>
+                        </div>
+                        <div class="bg"><img src="../images/main/quick_01.jpg" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <p>하이탑이 꿈꾸는 세상</p>
+                            <h2>CATALOG<br>DOWNLOAD</h2>
+                        </div>
+                        <div class="bg"><img src="../images/main/quick_02.jpg" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <p>변화를 주도하는 하이탑인</p>
+                            <h2>RECRUIT<br>HITOP PEOPLE</h2>
+                        </div>
+                        <div class="bg"><img src="../images/main/quick_03.jpg" alt=""></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- mainMenu end -->
+    <div id="business">
+        <div class="container">
+            <div class="titleBox">
+                <h2>BUSINESS FIELD</h2>
+                <p>하이탑이 디자인에서 설계, 시공까지 확실하게 책임지겠습니다.</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <h3>경관용 포장재</h3>
+                            <p>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</p>
+                        </div>
+                        <div class="bg"><img src="../images/main/business01.jpg" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <h3>경관용 포장재</h3>
+                            <p>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</p>
+                        </div>
+                        <div class="bg"><img src="../images/main/business01.jpg" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <h3>경관용 포장재</h3>
+                            <p>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</p>
+                        </div>
+                        <div class="bg"><img src="../images/main/business01.jpg" alt=""></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="txt">
+                            <h3>경관용 포장재</h3>
+                            <p>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</p>
+                        </div>
+                        <div class="bg"><img src="../images/main/business01.jpg" alt=""></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- business end -->
+    <div id="news">
+        <div class="container">
+            <div class="titleBox">
+                <h2>HITOP NEWS</h2>
+                <p>도시경관사업의 시장을 선도하는 하이탑의 다양한 소식을 전해드립니다.</p>
+            </div>
+            <div class="mask">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="imgBox">
+                                <img src="../images/main/news01.jpg" alt="">
+                            </div>
+                            <div class="txtBox">
+                                <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
+                                <p class="txt">
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가
+                                </p>
+                                <p class="date">2018-06-08</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="imgBox">
+                                <img src="../images/main/news01.jpg" alt="">
+                            </div>
+                            <div class="txtBox">
+                                <h3>하이탑 홈페이지 리뉴얼</h3>
+                                <p class="txt">
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    어떡하죠
+                                </p>
+                                <p class="date">2018-06-08</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="imgBox">
+                                <img src="../images/main/news01.jpg" alt="">
+                            </div>
+                            <div class="txtBox">
+                                <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
+                                <p class="txt">
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    어떡하죠
+                                </p>
+                                <p class="date">2018-06-08</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="imgBox">
+                                <img src="../images/main/news01.jpg" alt="">
+                            </div>
+                            <div class="txtBox">
+                                <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
+                                <p class="txt">
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가
+                                </p>
+                                <p class="date">2018-06-08</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="imgBox">
+                                <img src="../images/main/news01.jpg" alt="">
+                            </div>
+                            <div class="txtBox">
+                                <h3>하이탑 홈페이지 리뉴얼</h3>
+                                <p class="txt">
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    어떡하죠
+                                </p>
+                                <p class="date">2018-06-08</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="">
+                            <div class="imgBox">
+                                <img src="../images/main/news01.jpg" alt="">
+                            </div>
+                            <div class="txtBox">
+                                <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
+                                <p class="txt">
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    어떡하죠
+                                </p>
+                                <p class="date">2018-06-08</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btnPrev">
+                <i class="xi-angle-left-thin"></i>
+            </button>
+            <button class="btnNext">
+                <i class="xi-angle-right-thin"></i>
+            </button>
+        </div>
+    </div>
+    <!-- news end -->
+    <div id="customer">
+        <div class="titleBox">
+            <h2>CUSTOMER</h2>
+            <p>
+                하이탑의 포장기법은 지역적, 환경적 특성을 고려한 디자인으로 <br>
+                고객이 원하는 모든 곳을 새로운 문화, 새로운 랜드마크로 만들어드립니다.
+            </p>
+        </div>
+        <a href="" class="btnEstimate">견적문의 바로가기</a>
+    </div>
+
+    <div id="location">
+        <div class="titleBox">
+            <h2>오시는 길</h2>
+        </div>
+        <div id="map" style="width:100%;height:500px;"></div>
+    </div>
+
+    <aside id="popup">
+        <div class="contents">
+            팝업내용
+        </div>
+        <div class="btns">
+            <button class="btnOneday">오늘 하루 이창을 열지 않기</button>
+            <button class="btnClose">
+                닫기
+            </button>
+        </div>
+    </aside>
+    <footer id="footer">
+        <div class="utilMenu">
+            <ul>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">개인정보 보호정책</a></li>
+                <li><a href="">사이트맵</a></li>
+                <li><a href="">온라인 견적문의</a></li>
+            </ul>
+        </div>
+        <div id="address">
+            <div class="container">
+                <span class="fLogo"><img src="../images/layout/fLogo.png" alt=""></span>
+                <address>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>서울 송파구 성내천로 14길 13 (3층)</dd>
+                        <dt>대표전화</dt>
+                        <dd>070-7101-4414</dd>
+                        <dt class="newline">이메일</dt>
+                        <dd>hitop4400@hanmail.net</dd>
+                        <dt>고객센터</dt>
+                        <dd>070-8866-1793</dd>
+                        <dt>사업자번호</dt>
+                        <dd>402-81-83259</dd>
+                    </dl>
+                    <p>
+                        Copyright ⓒ 2018 HITOP. All rights reserved
+                    </p>
+                </address>
+                <div class="tel">
+                    <dl>
+                        <dt>고객센터</dt>
+                        <dd>070-8866-1793</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="" class="btnTop"><img src="../images/layout/btnTop.png" alt=""></a>
+    <div class="cover"></div>
+</body>
+
+</html>
+<!-- 
+        http://naver.me/FOsFW7qH
+        2242 
+    -->

@@ -1,0 +1,112 @@
+#mainVisual {
+    overflow: hidden;
+    position: relative;
+}
+
+#mainVisual .visualList li {
+    height: 100vh;
+    position: relative;
+}
+#mainVisual .visualList li .img {
+    height: 100vh;
+    transform:scale(1.1) rotate(0.01deg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    transition: all 3s ease;
+    transition-delay: 1s;
+}
+#mainVisual .visualList li.swiper-slide-active .img {
+    transform: scale(1);
+}
+#mainVisual .visualList #visual01 .img {
+    background-image: url("../images/main/mainVisual01.jpg");
+}
+#mainVisual .visualList #visual02 .img {
+    background-image: url("../images/main/mainVisual02.jpg");
+}
+#mainVisual .visualList #visual03 .img {
+    background-image: url("../images/main/mainVisual03.jpg");
+}
+#mainVisual .sloganBox {
+    position: absolute;
+    top:50%;
+    left:200px;
+    transform:translateY(-50%);
+    font-size: 4rem;
+    font-weight: 100;
+    color:#fff;
+    z-index: 2;
+}
+#mainVisual .sloganBox strong {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+#mainVisual .sloganBox a {
+    display: block;
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+#mainVisual .sloganBox a span {
+    display: inline-block;
+    width:60px;
+    height: 60px;
+    position: relative;    
+    margin-left: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 100px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+#mainVisual .sloganBox a span i {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+}
+#mainVisual .notice {
+    left:200px;
+    right:0;
+    height: 70px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    color:#fff;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.6);
+}
+#mainVisual .notice .title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 70px;
+    float: left;
+    padding: 0 30px;
+}
+#mainVisual .notice .mask {
+    float: left;
+    margin-left: 30px;
+    overflow: hidden;
+    width:600px;
+    height: 40px;
+    margin-top: 15px;
+}
+#mainVisual .notice .mask li {
+    height: 40px;
+    line-height: 40px;
+}
+#mainVisual .notice .btnBox {
+    position: absolute;
+    left:800px;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+#mainVisual .notice .btnBox .btn {
+    color:#fff;
+    font-size: 2.4rem;
+    display: block;
+}

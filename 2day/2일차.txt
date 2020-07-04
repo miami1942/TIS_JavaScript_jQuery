@@ -7,3 +7,13 @@ anime js도 괞찬고 무료다.
 로그인된 상태에서만 가능한가? N 로그아웃되도 가능함,
 그럼 깃허브 오류는 왜나는 걸까?
 
+swiper js - api봐볼것
+slick 도 잘 씀 slick은 ul li를 div로 감싸기 떄문에 주의해야한다.
+
+beautyfy 쓰기 파일 이쁘게 정렬해주는 기능
+
+emmet약어로 래핑 약어로 확장 알아보기
+(cheat sheet 참고)
+
+https://greensock.com/ 참고
+splitting js 도 글자쪼게기 좋음

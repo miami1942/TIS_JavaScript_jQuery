@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +15,16 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/splitting.css">
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/swiper.min.js"></script>
     <script src="../js/js.cookie.min.js"></script>
+    <script src="../js/splitting.js"></script>
     <script src="../js/greensock/gsap.min.js"></script>
     <script src="../js/main.js" defer></script>
+
 </head>
+
 <body>
     <!-- 영역은 div로 코딩 만약 영역이 의미를 가진다면 header나 footer section article 등으로
     코딩해주면 좋습니다. -->
@@ -93,6 +98,31 @@
     </header>
     <!-- header end -->
     <div id="mainVisual">
+        <div class="mask">
+            <ul class="visualList swiper-wrapper">
+                <li class="visual01 swiper-slide">
+                    <div class="imgMask">
+                        <div class="img">
+                            모래사장 배경
+                        </div>
+                    </div>
+                </li>
+                <li class="visual02 swiper-slide">
+                    <div class="imgMask">
+                        <div class="img">
+                            눈덮힌 산 배경
+                        </div>
+                    </div>
+                </li>
+                <li class="visual03 swiper-slide">
+                    <div class="imgMask">
+                        <div class="img">
+                            안개 가득한 숲속 배경
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <!-- <div class="txtMotion">
             <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -125,22 +155,20 @@
                 </li>
             </ul>
         </div> -->
-        <div class="mask">
-            <ul class="visualList swiper-wrapper">
-                <li class="visual01 swiper-slide"><div class="img">
-                    모래사장 배경
-                </div></li>
-                <li class="visual02 swiper-slide"><div class="img">
-                    눈덮힌 산 배경
-                </div></li>
-                <li class="visual03 swiper-slide"><div class="img">
-                    안개 가득한 숲속 배경
-                </div></li>
-            </ul>
+        <div class="slogan">
+            <p class="main" data-splitting>
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p class="sub" data-splitting>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Eligendi, quia rerum eum maxime facere recusandae exercitationem <br>
+                inventore aliquam quis laudantium?
+            </p>
         </div>
         <button class="btnPrev"><img src="../images/main/btn_prev.png" alt="이전 슬라이드 보기"></button>
         <button class="btnNext"><img src="../images/main/btn_next.png" alt="다음 슬라이드 보기"></button>
-        <div class="pager">
+        <div class="pagination">
+            <!--갯수만큼 나오게하기-->
             <span class="btns">
 
             </span>
@@ -242,6 +270,8 @@
                 <h2>HITOP NEWS</h2>
                 <p>도시경관사업의 시장을 선도하는 하이탑의 다양한 소식을 전해드립니다.</p>
             </div>
+
+
             <div class="mask">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
@@ -252,7 +282,7 @@
                             <div class="txtBox">
                                 <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
                                 <p class="txt">
-                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가
                                 </p>
                                 <p class="date">2018-06-08</p>
                             </div>
@@ -266,7 +296,8 @@
                             <div class="txtBox">
                                 <h3>하이탑 홈페이지 리뉴얼</h3>
                                 <p class="txt">
-                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를 만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
                                     어떡하죠
                                 </p>
                                 <p class="date">2018-06-08</p>
@@ -281,7 +312,8 @@
                             <div class="txtBox">
                                 <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
                                 <p class="txt">
-                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를 만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
                                     어떡하죠
                                 </p>
                                 <p class="date">2018-06-08</p>
@@ -296,7 +328,7 @@
                             <div class="txtBox">
                                 <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
                                 <p class="txt">
-                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가
                                 </p>
                                 <p class="date">2018-06-08</p>
                             </div>
@@ -310,7 +342,8 @@
                             <div class="txtBox">
                                 <h3>하이탑 홈페이지 리뉴얼</h3>
                                 <p class="txt">
-                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를 만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
                                     어떡하죠
                                 </p>
                                 <p class="date">2018-06-08</p>
@@ -325,7 +358,8 @@
                             <div class="txtBox">
                                 <h3>하이탑 홈페이지 리뉴얼 했는데 잘 봐주세요.</h3>
                                 <p class="txt">
-                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를 만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
+                                    평소 당사에 베풀어주신 성원과 격려에 깊은 감사드립니다. 저희 하이탑 홈페이지가 보다 더 새롭게 리뉴얼 되어 여러분을 찾아왔습니다. 당사는 홈페이지를
+                                    만드는데 최선을 다하고 인류공영에 이바지하고 개인의 영달을 위해 회사를 말아먹겠습니다. 짤리면
                                     어떡하죠
                                 </p>
                                 <p class="date">2018-06-08</p>
@@ -333,6 +367,8 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="pagination">
             </div>
             <button class="btnPrev">
                 <i class="xi-angle-left-thin"></i>
@@ -387,11 +423,11 @@
                 <address>
                     <dl>
                         <dt>주소</dt>
-                        <dd>서울 송파구 성내천로 14길 13 (3층)</dd> 
+                        <dd>서울 송파구 성내천로 14길 13 (3층)</dd>
                         <dt>대표전화</dt>
                         <dd>070-7101-4414</dd>
                         <dt class="newline">이메일</dt>
-                        <dd>hitop4400@hanmail.net</dd> 
+                        <dd>hitop4400@hanmail.net</dd>
                         <dt>고객센터</dt>
                         <dd>070-8866-1793</dd>
                         <dt>사업자번호</dt>
@@ -412,13 +448,10 @@
     </footer>
     <a href="" class="btnTop"><img src="../images/layout/btnTop.png" alt=""></a>
     <div class="cover"></div>
-    </body>
-    </html>
-    <!-- 
+</body>
+
+</html>
+<!-- 
         http://naver.me/FOsFW7qH
         2242 
     -->
-
-
-
-

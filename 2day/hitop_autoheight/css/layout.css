@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "돋움", sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+:root {
+    --bg-gray: #f6f6f6;
+    --main-color: #f00;
+    --hover-color: #f00;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    color: #fff;
+    transition: all 0.25s ease;
+    z-index: 999;
+}
+
+#header.on {
+    height: 400px;
+    color: #333;
+    background-color: #fff;
+}
+
+#header:before {
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 99px;
+    transition: all 0.25s ease;
+    content: "";
+    background-color: #fff;
+}
+
+#header.on:before {
+    background-color: #ccc;
+}
+
+#header.on #logo a .color {
+    opacity: 1;
+}
+
+#header.on #logo a .white {
+    opacity: 0;
+}
+
+#header:after {
+    display: block;
+    width: 320px;
+    height: 170px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    background: url("../images/layout/bgGnb.png") no-repeat;
+    background-size: cover;
+    transition: all 0.25s ease;
+    content: "";
+    opacity: 0;
+    z-index: -1;
+}
+
+#header.on:after {
+    opacity: 1;
+}
+
+#header .container {
+    width: auto;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+#logo a {
+    display: block;
+    height: 100px;
+    padding: 27px 0 28px;
+}
+
+#logo a span {
+    display: block;
+    height: 45px;
+    position: absolute;
+    transition: all 0.25s ease;
+}
+
+#logo a .color {
+    opacity: 0;
+}
+
+#gnb .list {
+    text-align: center;
+}
+
+#gnb .list>li {
+    vertical-align: top;
+}
+
+#gnb .list .depth01 {
+    display: block;
+    height: 100px;
+    padding: 0 35px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+#gnb .list>li:hover .depth02 {
+    visibility: visible;
+    opacity: 1;
+}
+
+#gnb .list .depth02 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding-bottom: 50px;
+    transition: all 0.25s ease;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#gnb .list>li:nth-child(4) .depth02,
+#gnb .list>li:nth-child(5) .depth02 {
+    padding-bottom: 0;
+}
+
+#gnb .list .depth02>li {
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+#gnb .list .depth02>li .title,
+#gnb .list .depth02>li>a {
+    display: block;
+    padding: 20px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+#gnb .list .depth02>li .depth03 {
+    text-align: left;
+}
+
+#gnb .list .depth02>li .depth03 li a {
+    display: block;
+    padding: 5px 0;
+}
+
+#header .btnAll {
+    width: 30px;
+    height: 22px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+#header .btnAll span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.25s ease;
+    background-color: #fff;
+}
+
+#header .btnAll span:nth-child(1) {
+    top: 0;
+}
+
+#header .btnAll span:nth-child(2) {
+    top: 10px;
+}
+
+#header .btnAll span:nth-child(3) {
+    top: 20px;
+}
+
+#header.on .btnAll span {
+    background-color: #000;
+}
+
+#header .btnAll.open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+#header .btnAll.open span:nth-child(2) {
+    left: 20px;
+    opacity: 0;
+}
+
+#header .btnAll.open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg);
+}
