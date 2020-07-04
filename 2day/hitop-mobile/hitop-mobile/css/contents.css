@@ -1,0 +1,27 @@
+.greetingBox {
+    background-image: url("../images/greeting01.jpg");
+    background-repeat: no-repeat;
+    padding-left: 600px;
+}
+
+.headerTxt {
+    font-size:40px;
+    font-weight: 300;
+    margin-bottom: 50px;
+
+}
+.headerTxt strong {
+    color:#970910;
+    font-weight: 700;
+}
+.txt p {
+    margin-bottom: 20px;
+    color:#666;
+    word-break: keep-all;
+}
+.textCenter {
+    text-align: center;
+}
+
+
+

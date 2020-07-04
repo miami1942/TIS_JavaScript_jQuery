@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HITOP</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contents.css">
+
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script defer src="../js/main.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 id="logo">
+            <a href="./">
+                <img src="../images/logo.png" alt="HITOP">
+            </a>
+        </h1>
+        <nav id="gnb">
+            <h2 class="hidden">gloabal navigation</h2>
+            <ul class="list">
+                <li>
+                    <a href="" class="depth01">
+                        company
+                        <!-- <span class="line"></span> -->
+                        <i class="xi-angle-down-min"></i>
+                    </a>
+                    <ul class="depth02">			
+                        <li><a href="summary.html">사업개요</a></li>
+                        <li><a href="greeting.html">인사말</a></li>
+                        <li><a href="philosophy.htm">경영이념</a></li>
+                        <li><a href="history.html">회사연혁</a></li>
+                        <li><a href="">CI소개</a></li>
+                        <li><a href="">조직도</a></li>
+                        <li><a href="">오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">
+                        business
+                        <i class="xi-angle-down-min"></i>
+                        <!-- <span class="line"></span> -->
+                    </a>
+                    <ul class="depth02">			
+                        <li><a href="">경관용포장재</a></li>
+                        <li><a href="">기능성포장재</a></li>
+                        <li><a href="">조립식바닥재</a></li>
+                        <li><a href="">스포츠필드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">
+                        PR
+                        <i class="xi-angle-down-min"></i>
+                        <!-- <span class="line"></span> -->
+                    </a>
+                    <ul class="depth02">			
+                        <li><a href="">특허인증</a></li>
+                        <li><a href="">시공실적</a></li>
+                        <li><a href="">시공사진</a></li>
+                        <li><a href="">카달로그</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">
+                        customer
+                        <i class="xi-angle-down-min"></i>
+                        <!-- <span class="line"></span> -->
+                    </a>
+                    <ul class="depth02">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">나라장터 등록물품</a></li>
+                        <li><a href="">견적문의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">
+                        recruit
+                        <i class="xi-angle-down-min"></i>
+                        <!-- <span class="line"></span> -->
+                    </a>
+                    <ul class="depth02">
+                        <li><a href="">인재상</a></li>
+                        <li><a href="">인사&복지</a></li>
+                        <li><a href="">채용공공</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="utilMenu">
+            <a href="">온라인 견적문의</a>
+            <button class="btnAll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <script>
+        var btnAll = document.querySelector(".btnAll");
+        btnAll.addEventListener("click",function(){
+            this.classList.toggle("open");
+        })
+        //f(x,y) = x+2y;
+    </script>
+    <!-- header end -->
