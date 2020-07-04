@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>-->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/main.js" defer></script>
+    <!--defer는 읽긴읽는데 나중에 읽으라는 말임, 연기하는것-->
+    <!--뒤에 와야 나중에 적용 html은 위에서부터 읽어옴, 아래에 적용방법-->
+    <script></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .black {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box black"></div>
+    <script src="../js/main.js"></script>
+    <!--이래야 적용됨 그러나 너무 가독성이 떨어짐, 그래서 나온게 이벤트 main.js로~-->
+</body>
+
+</html>
