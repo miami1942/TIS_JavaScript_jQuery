@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('../fonts/NanumSquareL.eot');
+  src: url('../fonts/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumSquareL.svg#NanumSquareL') format('svg'),
+       url('../fonts/NanumSquareL.woff') format('woff'),
+       url('../fonts/NanumSquareL.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('../fonts/NanumSquareR.eot');
+  src: url('../fonts/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumSquareR.svg#NanumSquareR') format('svg'),
+       url('../fonts/NanumSquareR.woff') format('woff'),
+       url('../fonts/NanumSquareR.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('../fonts/NanumSquareB.eot');
+  src: url('../fonts/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumSquareB.svg#NanumSquareB') format('svg'),
+       url('../fonts/NanumSquareB.woff') format('woff'),
+       url('../fonts/NanumSquareB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('../fonts/NanumSquareEB.eot');
+  src: url('../fonts/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumSquareEB.svg#NanumSquareEB') format('svg'),
+       url('../fonts/NanumSquareEB.woff') format('woff'),
+       url('../fonts/NanumSquareEB.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
