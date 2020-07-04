@@ -76,7 +76,7 @@ new Swiper("#news .mask", {
 });
 
 
-var motion01 = gsap.timeline(); //모션하나하나를 하나의 무비클립으로 건다 delay 필요없음
+var motion01 = gsap.timeline(); //모션하나하나를 하나의 무비클립으로 건다 delay 필요없음 timeline()안에도 옵션이있음  무한반복가능
 motion01.from("#mainVisual .slogan .main .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감
     y: -100,
     opacity: 0,
@@ -85,7 +85,8 @@ motion01.from("#mainVisual .slogan .main .char", { //from : 내가적어놓은 c
     stagger: 0.05,
   }) //g sock
   //첫번째신이 끝나고 바로 두번쨰 씬이 이어진다.
-  .from("#mainVisual .slogan .sub .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감
+  .from("#mainVisual .slogan .sub .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감 
+    //char를 적는이유는 char로 하나하나씩 반환되기 때문
     x: 200,
     opacity: 0,
     duration: 2,
