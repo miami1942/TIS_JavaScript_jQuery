@@ -17,3 +17,6 @@ emmet약어로 래핑 약어로 확장 알아보기
 
 https://greensock.com/ 참고
 splitting js 도 글자쪼게기 좋음
+
+addclass,랑 toggle class랑 머가다름?
+fade toggle은 정확히 머임?

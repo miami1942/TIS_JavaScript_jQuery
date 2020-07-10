@@ -4,5 +4,3 @@ $("#gnb .list > li").on("mouseenter", function () {
 $("#gnb .list > li").on("mouseleave", function () {
   $("header").removeClass("on");
 });
-
-

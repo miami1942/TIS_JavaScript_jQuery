@@ -43,6 +43,7 @@ a,span,strong,img,iframe,input 등을 제외한 나머지것들.. */
     z-index: 999;
     transition: all 0.5s;
 }
+
 #header:after {
     display: block;
     position: absolute;
@@ -57,6 +58,7 @@ a,span,strong,img,iframe,input 등을 제외한 나머지것들.. */
     text-align: center;
     z-index: 2;
 }
+
 #gnb .list {
     display: inline-block;
     margin: 0 auto;

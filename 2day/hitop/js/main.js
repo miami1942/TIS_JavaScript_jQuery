@@ -2,11 +2,14 @@
 
 Splitting();
 
+
 $("#gnb .list > li").on("mouseenter", function () {
-  $(this).find(".deprh02").stop().slideDown(400);
+  $("header").addClass("on");
+  //$(this).find(".deprh02").stop().slideDown(400);
+  //$(this).find(".deprh02").stop().slideUp(400);
 });
-$("#gnb .list > li").on("mouseenter", function () {
-  $(this).find(".deprh02").stop().slideUp(400);
+$("#gnb .list > li").on("mouseleave", function () {
+  $("header").removeClass("on");
 });
 //물결치는 현상이 발생함 queue라는 곳에 담아두는데 계속 명령이 쌓이니 물결이 치는것
 //그것을 방지하기 위해 stop() 을 적어 대기된 명령들을 다 해제하고 slide 한다.
@@ -77,7 +80,7 @@ new Swiper("#news .mask", {
 
 
 var motion01 = gsap.timeline(); //모션하나하나를 하나의 무비클립으로 건다 delay 필요없음 timeline()안에도 옵션이있음  무한반복가능
-motion01.from("#mainVisual .slogan .main .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감
+motion01.from("#mainVisual .slogan .main .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감 .char없으면 하나씩바운스안됨
     y: -100,
     opacity: 0,
     duration: 1,
