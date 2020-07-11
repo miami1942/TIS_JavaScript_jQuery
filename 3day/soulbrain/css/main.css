@@ -1,0 +1,623 @@
+#mainVisual {
+    position: relative;
+    overflow: hidden;
+}
+
+#mainVisual li {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+}
+
+#mainVisual li .img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+
+    transform: scale(1.15);
+}
+
+#mainVisual li .img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    transition: 3s 1s ease-in-out;
+    transform: scale(1.15);
+}
+
+#mainVisual .visual01 .img {
+    background-image: url("../images/main-visual-01.jpg");
+}
+
+#mainVisual .visual02 .img {
+    background-image: url("../images/main-visual-02.jpg");
+}
+
+#mainVisual .visual03 .img {
+    background-image: url("../images/main-visual-03.jpg");
+}
+
+#mainVisual .swiper-slide-active {
+}
+
+#mainVisual .swiper-slide-active .img {
+    transform: scale(1);
+    transition: 3s 1s ease-in-out;
+}
+
+#mainVisual .swiper-slide-duplicate-active {
+    transform: scale(1);
+}
+
+#mainVisual .txtBox {
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    z-index: 2;
+    font-size: 18px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#mainVisual .txtBox .main {
+    font-size: 54px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+#mainVisual .txtBox .main p {
+    /*아래 초록 줄 귿는 css형광팬 느낌*/
+    position: relative;
+    display: inline-block;
+    /*
+    z-index: 1;
+    */
+}
+
+#mainVisual .visual01 .txtBox .main p:before {
+    /*아래 초록 줄 귿는 css*/
+    content: "";
+    display: block;
+    left: 0px;
+    /*얼마나 빠지나*/
+    right: 0px;
+    height: 12px;
+    background-color: rgb(214, 245, 79, 0.8);
+    position: absolute;
+    bottom: 20px;
+    border-radius: 100px;
+    z-index: -1;
+    transform-origin: 0 50%; /*이거없으면 가운데서 형광팬 칠해지는데 이렇게하면 왼쪽에서 나온다.*/
+}
+#mainVisual .visual02 .txtBox .main p:before {
+    /*아래 초록 줄 귿는 css*/
+    content: "";
+    display: block;
+    left: 0px;
+    /*얼마나 빠지나*/
+    right: 0px;
+    height: 12px;
+    background-color: rgb(214, 245, 79, 0.8);
+    position: absolute;
+    bottom: 20px;
+    border-radius: 100px;
+    z-index: -1;
+    transform-origin: 0 50%;
+}
+#mainVisual .visual03 .txtBox .main p:before {
+    /*아래 초록 줄 귿는 css*/
+    content: "";
+    display: block;
+    left: 0px;
+    /*얼마나 빠지나*/
+    right: 0px;
+    height: 12px;
+    background-color: rgb(214, 245, 79, 0.8);
+    position: absolute;
+    bottom: 20px;
+    border-radius: 100px;
+    z-index: -1;
+    transform-origin: 0 50%;
+}
+
+#mainVisual .pagination {
+    position: absolute;
+    left: 200px;
+    z-index: 3;
+    /* top:calc(50% + 150px); */
+    top: 50%;
+    margin-top: 300px;
+    padding: 0 50px;
+}
+
+#mainVisual .pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 100px;
+    margin: 0 5px;
+    transition: 0.5s ease;
+}
+
+#mainVisual .pagination .swiper-pagination-bullet-active {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+#mainVisual .pagination i {
+    color: #fff;
+    font-size: 18px;
+}
+
+#mainVisual .pagination .btns {
+    float: left;
+}
+
+#mainVisual .pagination .bullets {
+    float: left;
+}
+
+#mainVisual .pagination .btnPlay {
+    display: none;
+}
+
+#mainVisual .pagination .btnPrev i,
+#mainVisual .pagination .btnNext i {
+    font-size: 36px;
+}
+
+#mainVisual .pagination .btnPrev {
+    position: absolute;
+    left: 0;
+    top: -7px;
+}
+
+#mainVisual .pagination .btnNext {
+    position: absolute;
+    right: 0;
+    top: -7px;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    position: relative;
+}
+
+#mainContents h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#mainContents section {
+    height: 100vh;
+}
+
+#business .leftContents {
+    width: 912px;
+    float: left;
+}
+
+#business .leftContents li {
+    float: left;
+}
+
+#business .leftContents li:nth-child(3) {
+    float: right;
+}
+
+#business .rightContents {
+    float: right;
+}
+
+#business li h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+#business li h3 .more {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: var(--main-color);
+    position: relative;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+#business li h3 .more:before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#business li h3 .more:after {
+    content: "";
+    display: block;
+    height: 14px;
+    width: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#business li img {
+    transition: 0.25s ease;
+}
+
+#business li:hover img {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.1));
+    /* box-shadow: 10px 10px 10px rgba(0,0,0,0.1); */
+}
+
+#mainContents .viewMore {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-size: 12px;
+}
+
+/* rnd */
+#rnd {
+    position: relative;
+}
+
+#rnd h2 {
+    margin-bottom: 100px;
+}
+
+#rnd:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 600px;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin-top: 70px;
+    margin-right: -600px;
+    transform: translateY(-50%);
+}
+
+#rnd .txtBox {
+    float: left;
+    width: 700px;
+    color: #fff;
+}
+
+#rnd .txtBox .main {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#rnd .txtBox .fList {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#rnd .txtBox .fList li {
+    margin-left: 40px;
+}
+
+#rnd .txtBox .fList li:first-child {
+    margin-left: 0;
+}
+
+#rnd .txtBox .fList li .icon {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#rnd .txtBox .fList li:nth-child(1) .icon {
+    background-image: url("../images/main_s2_icon1.png");
+}
+
+#rnd .txtBox .fList li:nth-child(2) .icon {
+    background-image: url("../images/main_s2_icon2.png");
+}
+
+#rnd .txtBox .fList li:nth-child(3) .icon {
+    background-image: url("../images/main_s2_icon3.png");
+}
+
+#rnd .imgBox {
+    float: right;
+    position: relative;
+    z-index: 0;
+}
+
+#rnd .imgBox:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/pattern.png");
+    left: -20px;
+    top: 20px;
+    z-index: -1;
+}
+
+#vision {
+    background: url("../images/main_s4_bg.jpg") no-repeat 50% / cover;
+    background-size: cover;
+}
+
+#vision h2 {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    top: 175px;
+}
+
+#vision .fList {
+    margin-top: 350px;
+}
+
+#vision .fList li {
+    width: 25%;
+    position: relative;
+    text-align: center;
+}
+
+#vision .fList li:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+#vision .fList li .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 50px 0;
+}
+
+#vision .fList li strong {
+    font-size: 78px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+#vision .fList li:nth-child(2n) {
+    color: #fff;
+}
+
+#vision .fList li:nth-child(2n) strong {
+    color: #fff;
+}
+
+#vision .fList li .main {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#vision .fList li:nth-child(3) {
+    top: -350px;
+}
+
+#vision .fList li:nth-child(1) {
+    background-color: #fff;
+}
+
+#vision .fList li:nth-child(2) {
+    background-color: var(--main-color);
+}
+
+#vision .fList li:nth-child(3) {
+    background-color: #fff;
+}
+
+#vision .fList li:nth-child(4) {
+    background-color: #472f91;
+    color: #fff;
+}
+
+#vision .viewMore {
+    position: static;
+    display: block;
+}
+
+/*  */
+#social {
+    background: url("../images/main_s5_bg.jpg") no-repeat 50% / cover;
+    background-size: cover;
+    color: #fff;
+}
+
+#social .txtBox .main {
+    font-size: 55px;
+}
+
+#social .txtBox p {
+    margin-bottom: 20px;
+}
+
+#social .txtBox .viewMore {
+    position: static;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin-top: 30px;
+}
+
+#media {
+    background: url("../images/main_s6_bg.jpg") no-repeat #ededed 50% 100% / contain;
+    background-size: contain;
+}
+
+#media article {
+    float: left;
+}
+
+#media #public {
+    width: 930px;
+    position: relative;
+}
+
+#media #ir {
+    float: right;
+    width: 400px;
+}
+
+#media #public ul {
+    border-top: 3px solid #333;
+}
+
+#media #public li {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#media #public li a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+}
+
+#media #public li .date {
+    float: left;
+    display: block;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+#media #public li p {
+    float: left;
+}
+
+#media #public li i {
+    float: right;
+    line-height: 100px;
+    font-size: 36px;
+    color: #999;
+    padding-right: 50px;
+}
+
+#media #ir .irBox {
+    background-color: var(--main-color);
+    color: #fff;
+    height: 407px;
+}
+
+#media #ir .irBox p {
+    padding: 40px;
+    border-bottom: 1px solid #fff;
+}
+
+#media #ir .irBox dl {
+    padding: 40px;
+    line-height: 1.8;
+}
+
+/* #media #ir .irBox dt:before {
+    content: '\A';
+    display: inline;
+    white-space: pre;
+} */
+
+#media #ir .irBox dt {
+    display: inline-block;
+    width: 60px;
+}
+
+#media #ir .irBox dd {
+    display: inline-block;
+    width: calc(100% - 80px);
+}
+
+#media #ir .irBox .stock {
+    font-size: 43px;
+    color: #d91718;
+    letter-spacing: -0.02em;
+}
+
+#media #ir .irBox .stock .unit {
+    font-size: 20px;
+    color: #fff;
+    vertical-align: baseline;
+}
+
+#media #ir .irBox .stock i {
+    font-size: 80px;
+    margin-right: -20px;
+    position: relative;
+    top: 10px;
+    vertical-align: sub;
+}
+
+#partners {
+    height: 110px !important;
+}
+
+#partners h2 {
+    width: 100px;
+    line-height: 110px;
+    float: left;
+    font-size: 16px;
+}
+
+#partners .banner {
+    padding: 33px 0;
+    width: 1300px;
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+
+#partners .banner .btnPrev {
+    font-size: 32px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#partners .banner .btnNext {
+    font-size: 32px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#partners .banner .mask {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#partners .mask li {
+    width: auto;
+    padding: 0 20px;
+}

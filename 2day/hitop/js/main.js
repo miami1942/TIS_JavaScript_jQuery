@@ -81,18 +81,27 @@ new Swiper("#news .mask", {
 
 var motion01 = gsap.timeline(); //모션하나하나를 하나의 무비클립으로 건다 delay 필요없음 timeline()안에도 옵션이있음  무한반복가능
 motion01.from("#mainVisual .slogan .main .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감 .char없으면 하나씩바운스안됨
+    //위에 Splitting();을쓰고 넣고 싶은 html에 data-splitting을 적어서 자바스크립트에서 .char로 쪼개는 것이다. .word등 옵션값들이 있다.   
     y: -100,
     opacity: 0,
     duration: 1,
     ease: "bounce", //out이 기본값, inout도 가능
-    stagger: 0.05,
+    stagger: 0.05, //한번 실행된 뒤 다음 실행까지 대기시간 없으면 모션이 한방에 일어난다
   }) //g sock
   //첫번째신이 끝나고 바로 두번쨰 씬이 이어진다.
   .from("#mainVisual .slogan .sub .char", { //from : 내가적어놓은 css상태로 돌아옴, to = css상태에서 내가 적은 상태로 감 
-    //char를 적는이유는 char로 하나하나씩 반환되기 때문
-    x: 200,
+    //char를 적는이유는 char로 하나하나씩 반환되기 때문, 
+    x: 200, //200떨어진 곳에서 옴
     opacity: 0,
-    duration: 2,
+    duration: 2, //페이지 로드 후 언제 실행되는지
     ease: "bounce.out", //out이 기본값, inout도 가능
     //delay: 2, //2초후 실행
   }); //g sock ,숫자1은 위에것 기다리지말고 절대시간 1초에 플레이하란 뜻
+/*
+var slogan = gsap.timeline();
+slogan.from("#mainVisual .slogan .main .char", { //""안에있는것들은 그 안의 그 안의 그안의 를 의미한다.
+  x: 100,
+  autoAlpha: 0, //오토알파는 visibility : hidden; opacity : 0; 이란 합친것
+  ease: "back", //모션을 쉽게 취하는 방정식 greenshock ease visualizer에서 제공한다.
+});
+*/

@@ -19,4 +19,6 @@ https://greensock.com/ 참고
 splitting js 도 글자쪼게기 좋음
 
 addclass,랑 toggle class랑 머가다름?
-fade toggle은 정확히 머임?
+a: 토글은 왔다갔다 해주는거
+fadetoggle은 정확히 머임?
+a: 스르륵 나타나는 것 slidetoggle은 밀리면서 나타나는것

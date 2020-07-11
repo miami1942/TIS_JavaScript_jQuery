@@ -1,0 +1,47 @@
+.hidden {
+    width:1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left:-9999px;
+}
+.ol {
+    outline: 1px solid #f00;
+}
+.clearFix:after , .fList:after  {
+    content: '';
+    display:block;
+    clear: both;
+}
+.center {
+    text-align: center;
+}
+
+.fList > li {float: left;}
+
+.cList {
+    text-align: center;
+    font-size: 0;
+}
+.cList > li {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.table {
+    display: table;
+    width:100%;
+    height: 100%;
+}
+.table > .tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
