@@ -1,0 +1,460 @@
+.section {
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.titleBox {
+    text-align: center;
+}
+
+.titleBox h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.titleBox h2 .whitespace {
+    margin: 0 0;
+}
+
+.titleBox p {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.titleBox p strong {
+    font-weight: 700;
+}
+
+#happen {
+    /*background-image: url("../images/main/main_bg1.jpg"); 이거떔에 비디오 작동안됨*/
+}
+
+#business {
+    background-image: url("../images/main/main_bg2.jpg");
+}
+
+#portfolio {
+    background-image: url("../images/main/main_bg3.jpg");
+}
+
+#community {
+    background-image: url("../images/main/main_bg4.jpg");
+}
+
+#footer {
+    color: #333;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 1.8;
+}
+
+#footer dt {
+    display: inline;
+    margin-left: 20px;
+}
+
+#footer dt:before {
+    content: '/';
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+#footer dt:nth-of-type(1):before {
+    display: none;
+}
+
+#footer dt:after {
+    content: ':';
+    display: inline;
+    margin: 0 5px;
+}
+
+#footer dd {
+    display: inline;
+}
+
+#footer .newline:before {
+    content: '\A';
+    display: inline;
+    white-space: pre;
+}
+
+.bgVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.iconList {
+    text-align: center;
+    font-size: 0;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.iconList li {
+    display: inline-block;
+    width: 300px;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.iconList li .icon {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: all 0.25s;
+    position: relative;
+}
+
+.iconList li:hover .icon {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.iconList li .icon img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iconList li dt {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.iconList li dd {
+    margin: auto;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 0 30px;
+    word-break: keep-all;
+}
+
+.portfolioList {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0;
+}
+
+.portfolioList li {
+    display: inline-block;
+    width: 400px;
+    margin: 0 20px;
+}
+
+.portfolioList li p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.portfolioList li img {
+    width: 100%;
+}
+
+.anchorList {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0;
+}
+
+.anchorList li {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.anchorList li:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.anchorList li a {
+    display: block;
+}
+
+#fp-nav ul li {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+}
+
+#fp-nav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#fp-nav ul li:hover a span {
+    width: 4px;
+    height: 4px;
+    margin: -2px 0px 0px -2px;
+}
+
+#fp-nav ul li a span:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.25s;
+}
+
+#fp-nav ul li a.active span:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+    height: 4px;
+    width: 4px;
+    margin: -2px 0 0 -2px;
+    border-radius: 100%;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+    font-family: "Noto Sans KR", "맑은 고딕", "돋움", sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: visible;
+    display: block;
+    opacity: 0.2;
+    width: auto;
+    cursor: pointer;
+}
+
+#fp-nav ul li .fp-tooltip.fp-right {
+    right: 60px;
+}
+
+#fp-nav ul li:last-child {
+    display: none;
+}
+
+#fp-nav {
+    transition: all 0.5s;
+    transition-delay: 0.5s;
+}
+
+body.last #fp-nav {
+    right: -160px;
+}
+
+#fp-nav ul li {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+    height: 4px;
+    width: 4px;
+    margin: -2px 0 0 -2px;
+    border-radius: 100%;
+}
+
+#fp-nav ul li:hover a span {
+    height: 4px;
+    width: 4px;
+    margin: -2px 0 0 -2px;
+}
+
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.fp-viewing-4 #fp-nav {
+    right: -200px;
+    /*집어넣기*/
+}
+
+#fp-nav {
+    transition: all 0.25s;
+}
+
+#fp-nav ul li a:after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#fp-nav ul li .fp-tooltip.fp-right {
+    right: 50px;
+}
+
+#fp-nav ul li:last-child {
+    display: none;
+}
+
+#fp-nav ul li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;
+    transition: all 0.25s;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+    font-family: "Noto Sans KR";
+    white-space: nowrap;
+    max-width: 220px;
+    min-width: 90px;
+    overflow: hidden;
+    display: block;
+    opacity: 0.5;
+    width: auto;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* fullpage custom */
+/* #fp-nav ul li {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    position:relative;
+}
+
+#fp-nav ul li a.active span:before {
+    content: '';
+    display: block;
+    width:30px;
+    height: 30px;
+    border: 2px solid #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius:100%;
+}
+#fp-nav ul li a span {
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#fp-nav ul li:hover a span{
+    width: 4px;
+    height: 4px;
+    margin: -2px 0px 0px -2px;
+}
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: 14px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    display: block;
+    opacity: 0.5;
+    width: auto;
+    cursor: pointer;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span
+{
+    opacity: 1;
+    height: 4px;
+    width: 4px;
+    margin: -2px 0 0 -2px;
+    border-radius: 100%;
+ }
+
+ #fp-nav ul li .fp-tooltip.fp-right {
+    right: 50px;
+}
+
+#fp-nav ul li:last-child {
+    display: none;
+}
+
+#fp-nav {
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+body.last #fp-nav {
+    right:-200px;
+} */

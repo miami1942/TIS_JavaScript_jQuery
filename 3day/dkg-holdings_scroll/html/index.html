@@ -1,0 +1,205 @@
+<!-- http://naver.me/GIjkD6sO 
+풀 페이지 실습-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DKG HOLDINGS</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/splitting.css">
+    <link rel="stylesheet" href="../css/fullpage.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/splitting.min.js"></script>
+    <script src="../js/greensock/gsap.min.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="logo">
+            <a href="">
+                <img src="../images/layout/logoWhite.png" alt="" class="white">
+                <img src="../images/layout/logoColor.png" alt="" class="color">
+            </a>
+        </h1>
+        <nav id="gnb">
+            <ul class="gnbList">
+                <li>
+                    <a href="" class="depth01">디케이지홀딩스</a>
+                    <ul class="depth02">
+                        <li><a href="">CEO 인사말</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">연혁</a></li>
+                        <li><a href="">조직도</a></li>
+                        <li><a href="">오시는 길</a></li>
+                        <li><a href="">채용안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">사업영역</a>
+                    <ul class="depth02">
+                        <li><a href="">개발부문</a></li>
+                        <li><a href="">마케팅부문</a></li>
+                        <li><a href="">PM/컨설팅</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">포트폴리오</a>
+                    <ul class="depth02">
+                        <li><a href="">포트폴리오</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" class="depth01">고객지원</a>
+                    <ul class="depth02">
+                        <li><a href="">회사소개서</a></li>
+                        <li><a href="">온라인문의</a></li>
+                        <li><a href="">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <div class="section" id="happen">
+            <div class="table">
+                <div class="tableCell">
+                    <div class="titleBox">
+                        <h2 data-splitting>WE WILL MAKE IT HAPPEN</h2>
+                        <p data-splitting>
+                            다양한 분야의 개발사업을 통해 <br>
+                            고객만족을 실현하는 최고의 <strong>부동산 개발 전문기업</strong>
+                        </p>
+                        <!-- <img src="../images/main/star.svg" alt="" style="width:1000px"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="bgVideo">
+                <video src="../images/main/intro.mp4" muted autoplay loop data-keepplaying></video>
+                <!--muted autoplay loop비디오 자동재생, data-keepplaying 떠날떄 일시정지-->
+            </div>
+        </div>
+        <div class="section" id="business">
+            <!--하나씩움직이는건 무조건 section-->
+            <div class="table">
+                <div class="tableCell">
+                    <div class="titleBox">
+                        <h2 data-splitting>BUSINESS</h2>
+                        <p data-splitting>
+                            최고의 전문가들이 시작부터 준공까지 참여하여 <br>
+                            고객의 모든 요구를 가능하게 만드는 <strong>부동산 개발 전문기업</strong>
+                        </p>
+                    </div>
+                    <ul class="iconList">
+                        <li>
+                            <div class="icon">
+                                <img src="../images/main/main_sec2_icon1.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>개발부문</dt>
+                                <dd>
+                                    공동주택&주상복합&오피스텔, 도시개발사업, 택지개발지구 주택사업, 복합용도개발사업, 공모사업
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="../images/main/main_sec2_icon2.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>마케팅 부문</dt>
+                                <dd>
+                                    상품분석, 입지 및 분양환경 분석,
+                                    마케팅 전략수립
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="../images/main/main_sec2_icon3.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>PM/컨설팅</dt>
+                                <dd>
+                                    사업성검토 및 환경분석, 토지매입,
+                                    컨셉 및 상품 기획 등
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="portfolio">
+            <div class="table">
+                <div class="tableCell">
+                    <div class="titleBox">
+                        <h2 data-splitting>PORTFOLIO</h2>
+                        <p data-splitting>
+                            최고의 부동산 개발 전문가들이 진행한 <br>
+                            <strong>최고의 결과물</strong>
+                        </p>
+                    </div>
+                    <ul class="portfolioList">
+                        <li>
+                            <img src="../images/main/banner01.jpg" alt="">
+                            <p>법곳대화지구 도시개발사업</p>
+                        </li>
+                        <li>
+                            <img src="../images/main/banner02.jpg" alt="">
+                            <p>경기 광주 센트럴푸르지오</p>
+                        </li>
+                        <li>
+                            <img src="../images/main/banner03.jpg" alt="">
+                            <p>천호역 한강푸르지오 시티</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="community">
+            <div class="table">
+                <div class="tableCell">
+                    <div class="titleBox">
+                        <h2 data-splitting>COMMUNITY</h2>
+                        <p data-splitting>
+                            다양한 경험을 통한 최적의 <br>
+                            <strong>개발 방안 제공</strong>
+                        </p>
+                    </div>
+                    <ul class="anchorList">
+                        <li><a href="">회사소개서</a></li>
+                        <li><a href="">온라인 문의</a></li>
+                        <li><a href="">공지사항</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height" id="footer">
+            <!--fp-auto-height는 화면에 안채우겠다는 뜻-->
+            <a href="">개인정보취급방침</a>
+            <dl>
+                <dt>㈜디케이지홀딩스 대표</dt>
+                <dd>강민성</dd>
+                <dt>주소</dt>
+                <dd>
+                    서울특별시 강남구 테헤란로 447 KB우준타워 8층
+                </dd>
+                <dd class="newline">TEL. 02-553-7410,7430 FAX. 02-553-7409</dd>
+            </dl>
+            <p>Copyright © 2019 DKG Holdings All rights reserved.</p>
+        </div>
+    </div>
+    <span class="skip">SKIP</span>
+    <a href="" class="btnTop">TOP</a>
+</body>
+
+</html>

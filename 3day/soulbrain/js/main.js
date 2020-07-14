@@ -30,12 +30,12 @@ btnlanguage.on("click", function (e) {
     return false; //새로고침 방지
 });
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //슬라이드 하는법
 var mainVisual = new Swiper("#mainVisual", { //이렇게 한줄만 적어도 돌아는 감 var 없어도 돌아는 가는데 변수에 넣어서 이름을 정한 것이다.
     effect: "fade", //바뀔때 효과
     autoplay: { //자동기능 css의 transtation 3s 1s 여기서 3은 시간 1은 딜레이값 총 4초가걸림
-        delay: 4000,
+        delay: 7000,
         disableOnInteraction: false,
     },
     navigation: {
@@ -59,7 +59,8 @@ var mainVisual = new Swiper("#mainVisual", { //이렇게 한줄만 적어도 돌
                 txtMotion03.restart();
             }
         }
-    }
+    },
+    loop: true,
 });
 
 var btnStop = $("#mainVisual .auto .btnStop");
@@ -75,6 +76,8 @@ btnPlay.on("click", function () {
     mainVisual.autoplay.start();
 });
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 gsap.registerPlugin(CSSRulePlugin); //오류뜨는거 고치고 CSSRulePlugin플러그인쓸수있게하려고 인식시키는 것
 
 var txtMotion01 = gsap.timeline();
@@ -84,65 +87,67 @@ var txtMotion02 = gsap.timeline({
 var txtMotion03 = gsap.timeline({
     paused: true
 });
-var line01 = CSSRulePlugin.getRule("#mainVisual .visual01 .txtBox .main p:before"); //get the rule
-var line02 = CSSRulePlugin.getRule("#mainVisual .visual02 .txtBox .main p:before");
-var line03 = CSSRulePlugin.getRule("#mainVisual .visual03 .txtBox .main p:before");
+var line0101 = CSSRulePlugin.getRule("#mainVisual .visual01 .txtBox .main p:nth-of-type(1):before"); //get the rule 은 정확한 css값이 있어야만 동작한다.
+var line0102 = CSSRulePlugin.getRule("#mainVisual .visual01 .txtBox .main p:nth-of-type(2):before");
+var line0201 = CSSRulePlugin.getRule("#mainVisual .visual02 .txtBox .main p:nth-of-type(1):before");
+var line0202 = CSSRulePlugin.getRule("#mainVisual .visual02 .txtBox .main p:nth-of-type(2):before");
+var line0301 = CSSRulePlugin.getRule("#mainVisual .visual03 .txtBox .main p:nth-of-type(1):before");
+var line0302 = CSSRulePlugin.getRule("#mainVisual .visual03 .txtBox .main p:nth-of-type(2):before");
 
-txtMotion01.from("#mainVisual .visual01 .main .char", { //#mainVisual안에있는 .visual01의 안에있는 .main의 .char 이미자른뒤 적용이라.char이 있다.
-        x: 100,
-        autoAlpha: 0,
-        ease: "back",
-        duration: 1,
-        stagger: 0.05,
-    })
-    .from(line01, {
-        duration: 1,
-        cssRule: {
-            scaleX: 0
-        }
-    });
-txtMotion01.from("#mainVisual .visual01 .sub .char", {
-    x: 100,
-    autoAlpha: 0,
-    ease: "back",
-    duration: 1,
-    stagger: 0.02,
-});
-txtMotion02.from("#mainVisual .visual02 .main .char", { //#mainVisual안에있는 .visual01의 안에있는 .main의 .char 이미잘른뒤 적용이라.char이 있다.
+var charMotion = {
     x: 100,
     autoAlpha: 0,
     ease: "back",
     duration: 1,
     stagger: 0.05,
-}).from(line02, {
+}
+var lineMotion = {
     duration: 1,
     cssRule: {
         scaleX: 0
     }
-});
-txtMotion02.from("#mainVisual .visual02 .sub .char", {
+}
+var subMotion = {
     x: 100,
     autoAlpha: 0,
     ease: "back",
     duration: 1,
     stagger: 0.02,
-});
-txtMotion03.from("#mainVisual .visual03 .main .char", { //#mainVisual안에있는 .visual01의 안에있는 .main의 .char 이미잘른뒤 적용이라.char이 있다.
-    x: 100,
-    autoAlpha: 0,
-    ease: "back",
-    duration: 1,
-    stagger: 0.05,
-}).from(line03, {
-    duration: 1,
-    cssRule: {
-        scaleX: 0
-    }
-});
-txtMotion03.from("#mainVisual .visual03 .sub .char", {
-    x: 100,
-    autoAlpha: 0,
-    ease: "back",
-    duration: 1,
-    stagger: 0.02,
+}
+
+txtMotion01 //#mainVisual안에있는 .visual01의 안에있는 .main의 .char 이미자른뒤 적용이라.char이 있다.
+    .from("#mainVisual .visual01 .main p:nth-of-type(1) .char", charMotion)
+    .from(line0101, lineMotion, 0.5) //모션 끝난다음에 하는건데 절대치 0.5초에서 움직이라 명령
+    .from("#mainVisual .visual01 .main p:nth-of-type(2) .char", charMotion, 1)
+    .from(line0102, lineMotion, 1.5)
+    .from("#mainVisual .visual01 .sub .char", subMotion, 3);
+txtMotion02
+    .from("#mainVisual .visual02 .main p:nth-of-type(1) .char", charMotion)
+    .from(line0201, lineMotion, "-=1") //앞의 타임라인이 몇초인지 모르겠지만 -=1 (-1초) 앞당겨서 실행하라는 뜻, 위에게 3초만에끝나면 1초앞당겨서 2초에 시작함 ""따옴표는 앞의것 참고하라는뜻?
+    .from("#mainVisual .visual02 .main p:nth-of-type(2) .char", charMotion, "-=1")
+    .from(line0202, lineMotion, "-=1")
+    .from("#mainVisual .visual02 .sub .char", subMotion);
+txtMotion03
+    .from("#mainVisual .visual03 .main p:nth-of-type(1) .char", charMotion)
+    .from(line0301, lineMotion, "+=1") //+는 끝난 시점에서 1초 뒤에 가는것
+    .from("#mainVisual .visual03 .main p:nth-of-type(2) .char", charMotion, "+=1")
+    .from(line0302, lineMotion, "+=1")
+    .from("#mainVisual .visual03 .sub .char", subMotion);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+new Swiper("#partners .banner .mask", {
+    slidesPerView: "auto", //화면에 몇개를 보이게 하고 싶다. 반드시 css에 넓이 잡아야한다, #partners .mask li 에 적혀있음
+    spaceBetween: 20,
+    centeredSlides: true, //현재 활성화된애가 가운데로 주로 모바일에서 쓰임
+    loop: true,
+    navigation: {
+        prevEl: "#partners .btnPrev",
+        nextEl: "#partners .btnNext",
+    },
+    autoplay: { //자동기능 css의 transtation 3s 1s 여기서 3은 시간 1은 딜레이값 총 4초가걸림
+        delay: 1000,
+        //disableOnInteraction: false,
+    },
 });

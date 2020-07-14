@@ -1,3 +1,13 @@
 서버 간단하게 돌릴때는 autoset을 이용하면 편하다.
 Auto Rename Tag = 태그 자동바꾸는 기능
-cssruleplugin
+cssruleplugin 형광팬 시간 조절 맞는 css가 있어야 한다 플러그인 추가
+fullpage.js  페이지 내릴떄마다 움직이는 것
+fullpage.min.js 추가
+fullpage.css 추가
+참고 : https://github.com/alvarotrigo/fullPage.js/tree/master/lang/korean#fullpagejs
+
+post css <css정리
+
+gdweb 봐보기
+
+vincentgarreau.com/particles.js/

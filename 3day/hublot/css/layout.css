@@ -1,0 +1,88 @@
+* ,*:before,*:after {
+    box-sizing:border-box;
+}
+html {font-size: 16px;}
+body {
+    font-family: "Oswald","Noto Sans KR",sans-serif;
+    color:#333;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+.container {
+    width:1200px;
+    margin:0 auto;
+}
+/* 
+float을 통한 좌우 배치
+#logo {
+    float:left;
+}
+#gnb {
+    float:right;
+    text-align: center;
+}
+#gnb .list > li {
+    float: left;
+} 
+*/
+#header {
+    position: fixed;
+    width:100%;
+    color:#fff;
+    height: 90px;
+    overflow: hidden;
+    z-index: 9999;
+    transition: 0.25s ease;
+}
+#header.open {
+    height: 340px;
+    background-color: #fff;
+    color:#333;
+}
+#header.open #logo .color {
+    opacity: 1;
+}
+#header.open #logo .white {
+    opacity: 0;
+}
+
+#logo {
+    position: absolute;
+    top:14px;
+    left:50px;
+}
+#logo img {
+    position: absolute;
+    transition: 0.25s ease;
+}
+#logo .color {
+    opacity: 0;
+}
+
+#gnb {
+    text-align: center;
+}
+#gnb .list {
+    display: inline-block;
+}
+#gnb .list > li {
+    float: left;
+}
+#gnb .list > li .depth01 {
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    font-size: 18px;
+    font-weight: bold;
+    padding:0 40px;
+}
+#gnb .list > li .depth02 {
+    padding:15px 0;
+}
+#gnb .list > li .depth02 a {
+    display: block;
+    padding:5px 0;
+}

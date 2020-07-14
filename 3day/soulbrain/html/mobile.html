@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .youtube {
+            position: relative;
+        }
+
+        .youtube:before {
+            /*원래 ::은 두개가 정상인데 익스플로어에서 하나만 인식해서 하나로 씀/
+            content: '';
+            display: block;
+            padding-top: 56.25%;
+            /*넓이의 대응하는 높이 16:9는 56.25% 이다*/
+        }
+
+        .youtube iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .listBox li {
+            width: 31.33%;
+            /*3개로 나눌 경우 퍼센트*/
+            margin: 0 1%;
+            border: 1px solid red;
+            box-sizing: border-box;
+            float: left;
+            list-style: none;
+            text-align: center;
+            position: relative;
+        }
+
+        .listBox li::before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+
+        .listBox li .item {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--동영상 넣는법-->
+    <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L0MK7qz13bU" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="listBox">
+        <ul>
+            <li>
+                <div class="item">01</div>
+            </li>
+            <li>
+                <div class="item">02</div>
+            </li>
+            <li>
+                <div class="item">03</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

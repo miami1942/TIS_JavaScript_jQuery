@@ -1,0 +1,371 @@
+#subVisual {
+    height: 500px;
+    text-align: center;
+    color:#fff;
+    position: relative;
+}
+.subVisual01 {
+    background-image: url("../images/sub1_bg.jpg");
+}
+.subVisual02 {
+    background-image: url("../images/sub2_bg.jpg");
+}
+
+
+#subVisual .subTitle {
+    position: absolute;
+    width:100%;
+    top:50%;
+    transform: translateY(-50%);
+}
+#subVisual .subTitle h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+#subVisual .subTitle p {
+    font-size: 18px;
+}
+
+#lnb {
+    position: absolute;
+    height: 70px;
+    bottom: 0;
+    width:100%;
+    text-align: left;
+    background-color: rgba(0,0,0,0.4);
+}
+#lnb .btnHome {
+    float: left;
+    text-align: center;
+    display: block;
+    width:70px;
+    height: 70px;
+    line-height: 70px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+#lnb .listBox {
+    float: left;
+    margin-left: -1px;
+    width:340px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+#lnb .listBox a {
+    display: block;
+    padding:0 20px;
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+}
+#lnb .listBox a i {
+    position: absolute;
+    right:20px;
+    top:0;
+    line-height: 70px;
+}
+#lnb .listBox ul li a {
+    border: 1px solid rgba(255,255,255,0.2);
+    margin-top: -1px;
+    background-color: rgba(0,0,0,0.4);
+}
+#lnb .listBox ul {
+    display: none;
+}
+
+#subContents {
+    margin: auto;
+    padding-bottom: 100px;
+    min-height: 100vh;
+
+}
+
+.contentsTitle {
+    padding:100px 0 0;
+    text-align: center;
+    font-size: 52px;
+
+}
+.contentsTitle:after {
+    content: '';
+    display: block;
+    width:1px;
+    height: 80px;
+    background-color: #333;
+    margin:0 auto 100px;
+
+}
+
+.summary .slogan {
+    font-size: 36px;
+    text-align: center;
+    height: 550px;
+    background: url("../images/m11_slg_bg.jpg") no-repeat 100% 50% / cover;
+    background-size: cover;
+    color:#fff;
+    position: relative;
+    float: right;
+    width:100%;
+    max-width: 1680px;
+}
+.summary .slogan p {
+    position: absolute;
+    width:100%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.summary .soulbrain {
+    margin-top: 150px;
+    position: relative;
+    min-height: 800px;
+}
+.summary .soulbrain:before {
+    content: '';
+    display: block;
+    width:100%;
+    height: 400px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top:-300px;
+    z-index: -1;
+}
+.summary .soulbrain .imgBox {
+    position: absolute;
+    background: url("../images/m11_section2_img.jpg");
+    width:950px;
+    height: 690px;
+    left:0;
+    transform: translateX(-40%);
+}
+.summary .soulbrain .txtBox {
+    float: right;
+    width:50%;
+    padding-left: 100px;
+}
+.summary .soulbrain .txtBox p {
+    margin-bottom: 30px;
+}
+.summary .soulbrain .txtBox .title {
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+
+/* greeting */
+.greeting .greetingBox {
+    text-align: center;
+    padding-bottom: 200px;
+    background: url("../images/m12_bg1.gif") no-repeat 50% 100% / contain;
+    background-size: contain;
+}
+.greeting .greetingBox .main {
+    font-size: 32px;
+    font-weight: 700;
+}
+.greeting .greetingBox .main:after {
+    content: '';
+    display: block;
+    width:30px;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin: 20px auto;
+}
+.greeting .greetingBox .sub {
+    font-size: 24px;
+}
+
+
+.tab {
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+}
+.tab ul li a {
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    padding:0 40px;
+}
+.tab ul li.on a {
+    color:#fff;
+    background-color: var(--main-color);
+    position: relative;
+}
+.tab ul li.on a:after {
+    content: '';
+    display: block;
+    width:0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: var(--main-color);
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.tabContentsList > li {
+    display: none;
+}
+.tabContentsList > li.on {
+    display: block;
+}
+
+.greeting .greetingList .hi {
+    padding:100px 0 100px 150px;
+    background: url("../images/bg_dd1.png") no-repeat 50px 50%;
+    font-size: 42px;
+    font-weight: 700;
+}
+.greeting .greetingList .greetingTxt {
+    padding:100px 150px;
+}
+.greeting .greetingList .greetingTxt .main {
+    font-size: 28px;
+    margin: 30px 0;
+}
+.greeting .greetingList .greetingTxt .sign {
+    margin-top: 100px;
+}
+.greeting .greetingList .greetingTxt .sign strong {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* business */
+.business .businessHeaderBox {
+    padding-bottom: 300px;
+    background: url("../images/m12_bg1.gif") no-repeat 50% 100% / contain;
+    background-size: contain;
+}
+.business .businessHeaderBox .titleBox {
+    position: absolute;
+    width:950px;
+    height: 300px;
+    padding:80px;
+    background-color: #fff;
+    right:0;
+    bottom: 0;
+}
+.business .businessHeaderBox .titleBox .eng {
+    font-size: 20px;
+    font-weight: 700;
+}
+.business .businessHeaderBox .titleBox .eng:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #333;
+    margin: 10px 0;
+}
+.business .businessHeaderBox .titleBox .main {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.business .businessList > li > div {
+    padding: 50px 0 0;
+}
+.business .businessList .main {
+    padding:100px;
+}
+.business .businessList .main .imgBox {
+    float: left;
+}
+.business .businessList .main .txtBox {
+    float: right;
+    width:50%;
+    padding:80px 0;
+}
+.business .businessList .main .txtBox h4 {
+    margin-bottom: 50px;
+}
+.business .businessList .main .txtBox h4 .kor {
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+}
+.business .businessList .main .txtBox h4 .eng {
+    font-size: 52px;
+    font-weight: 700;
+    display: block;
+    margin-top: 10px;
+}
+.business .businessList .title {
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 30px;
+}
+.business .businessList .title span {
+    display: inline-block;
+    padding-right: 30px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.business .businessList .title:after {
+    content: '';
+    display: block;
+    width:100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.business .businessList .productList li {
+    width:25%;
+    margin: 10px 0;
+}
+.business .businessList .productList.wide li {
+    width:100%;
+}
+.business .businessList .productList li:before {
+    content: '';
+    display: inline-block;
+    width:7px;
+    height: 2px;
+    background-color: #333;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.business .businessList .example li {
+    width:200px;
+    height: 200px;
+    position: relative;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    margin-left: -1px;
+    padding-top: 140px;
+}
+.business .businessList .example li img {
+    position: absolute;
+    left:50%;
+    top:25%;
+    transform: translateX(-50%);
+}
+.business .businessList .manager li {
+    margin-right: 30px;
+}
+.business .businessList .manager li .name {
+    margin-bottom: 10px;
+}
+.business .businessList .manager li .name:before {
+    content: '';
+    display: inline-block;
+    width:7px;
+    height: 1px;
+    background-color: #333;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.business .businessList .manager li .mail {
+    padding-left: 10px;
+}
+.business .businessList .manager li .mail i {
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
