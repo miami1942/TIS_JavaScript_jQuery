@@ -1,5 +1,7 @@
 Splitting(); //화면 가서 검사해보면 쪼개져 있음
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//헤더부분
 var list = $("#gnb .list > li");
 var header = $("#header"); //단순히 치환만 시켜놓음
 var btnAll = header.find(".btnAll"); //헤더에서 btnAll이라는 클래스를 찾아서 변수에 넣는다.
@@ -7,7 +9,6 @@ var gnbAll = header.find("#gnbAll");
 var btnlanguage = header.find(".utilMenu .language > a");
 var language = header.find(".utilMenu .language > ul");
 //language안에서 a를 찾으면 밑뿐만아니라 그 아랫것도 다 포함된다. 따라서 이렇게쓴다.
-
 
 list.on("mouseenter", function () {
     header.addClass("on");
@@ -23,15 +24,13 @@ btnAll.on("click", function (e) {
     gnbAll.stop().slideToggle();
     //e.preventDefault();//a태그 링크 기능 없애주는 경우 버튼이니 당장은 필요없음
 });
-
-
 btnlanguage.on("click", function (e) {
     language.stop().slideToggle(); //이렇게 두면 a태그이기 떄문에 새로고침을 해버린다. 그래서 그걸 방지하고자 아래와같이 쓴다.
     return false; //새로고침 방지
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//슬라이드 하는법
+//슬라이드
 var mainVisual = new Swiper("#mainVisual", { //이렇게 한줄만 적어도 돌아는 감 var 없어도 돌아는 가는데 변수에 넣어서 이름을 정한 것이다.
     effect: "fade", //바뀔때 효과
     autoplay: { //자동기능 css의 transtation 3s 1s 여기서 3은 시간 1은 딜레이값 총 4초가걸림
@@ -76,8 +75,24 @@ btnPlay.on("click", function () {
     mainVisual.autoplay.start();
 });
 
+/* 왜 쓴거지?
+new Swiper("#partners .banner .mask", {
+    slidesPerView: "auto", //화면에 몇개를 보이게 하고 싶다. 반드시 css에 넓이 잡아야한다, #partners .mask li 에 적혀있음
+    spaceBetween: 20,
+    centeredSlides: true, //현재 활성화된애가 가운데로 주로 모바일에서 쓰임
+    loop: true,
+    navigation: {
+        prevEl: "#partners .btnPrev",
+        nextEl: "#partners .btnNext",
+    },
+    autoplay: { //자동기능 css의 transtation 3s 1s 여기서 3은 시간 1은 딜레이값 총 4초가걸림
+        delay: 1000,
+        //disableOnInteraction: false,
+    },
+});
+*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+//글자 움직임
 gsap.registerPlugin(CSSRulePlugin); //오류뜨는거 고치고 CSSRulePlugin플러그인쓸수있게하려고 인식시키는 것
 
 var txtMotion01 = gsap.timeline();
@@ -114,7 +129,7 @@ var subMotion = {
     duration: 1,
     stagger: 0.02,
 }
-
+//.from 처럼 .을 붙히면 그 안에 집어넣는다.
 txtMotion01 //#mainVisual안에있는 .visual01의 안에있는 .main의 .char 이미자른뒤 적용이라.char이 있다.
     .from("#mainVisual .visual01 .main p:nth-of-type(1) .char", charMotion)
     .from(line0101, lineMotion, 0.5) //모션 끝난다음에 하는건데 절대치 0.5초에서 움직이라 명령
@@ -134,20 +149,8 @@ txtMotion03
     .from(line0302, lineMotion, "+=1")
     .from("#mainVisual .visual03 .sub .char", subMotion);
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-new Swiper("#partners .banner .mask", {
-    slidesPerView: "auto", //화면에 몇개를 보이게 하고 싶다. 반드시 css에 넓이 잡아야한다, #partners .mask li 에 적혀있음
-    spaceBetween: 20,
-    centeredSlides: true, //현재 활성화된애가 가운데로 주로 모바일에서 쓰임
-    loop: true,
-    navigation: {
-        prevEl: "#partners .btnPrev",
-        nextEl: "#partners .btnNext",
-    },
-    autoplay: { //자동기능 css의 transtation 3s 1s 여기서 3은 시간 1은 딜레이값 총 4초가걸림
-        delay: 1000,
-        //disableOnInteraction: false,
-    },
+new fullpage('#main', {
+    scrollbar: true,
 });

@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
     <header id="header">
         <h1 id="logo">
             <a href=""><img src="../images/logo.png" alt="soul brain"></a>
@@ -186,68 +187,69 @@
         </nav>
     </header>
     <!-- header end -->
-    <div id="mainVisual">
-        <ul class="swiper-wrapper">
-            <li class="swiper-slide visual01">
-                <div class="txtBox">
-                    <div class="main" data-splitting>
-                        <!--내가 쪼개고싶은 것에 data-splitting을 적는다.
+    <div id="main">
+        <div class="section" id="mainVisual">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide visual01">
+                    <div class="txtBox">
+                        <div class="main" data-splitting>
+                            <!--내가 쪼개고싶은 것에 data-splitting을 적는다.
                     그 뒤 js가서 splitting()을 적어야한다 위에 insert splitting도 하고... -->
-                        <p>BUILDING A BETTER FUTURE</p><br>
-                        <p>THROUGH CONVERGENCE</p>
+                            <p>BUILDING A BETTER FUTURE</p><br>
+                            <p>THROUGH CONVERGENCE</p>
+                        </div>
+                        <p class="sub" data-splitting>
+                            '융합'을 통해 새로운 기회를 찾아 최고의 제품과 서비스를 창출하여 <br> 고객과 구성원,그리고 사회에게 지금보다 나은 미래를 제시합니다.
+                        </p>
                     </div>
-                    <p class="sub" data-splitting>
-                        '융합'을 통해 새로운 기회를 찾아 최고의 제품과 서비스를 창출하여 <br> 고객과 구성원,그리고 사회에게 지금보다 나은 미래를 제시합니다.
-                    </p>
-                </div>
-                <div class="img"></div>
-            </li>
-            <li class="swiper-slide visual02">
-                <div class="txtBox">
-                    <div class="main" data-splitting>
-                        <p>ENVISION YOUR FUTURE,</p><br>
-                        <!--인라인블록하면 p태그가 바로 붙어버려서 br로 한번 띄움-->
-                        <p>BEYOND TECHNOLOGY</p>
+                    <div class="img"></div>
+                </li>
+                <li class="swiper-slide visual02">
+                    <div class="txtBox">
+                        <div class="main" data-splitting>
+                            <p>ENVISION YOUR FUTURE,</p><br>
+                            <!--인라인블록하면 p태그가 바로 붙어버려서 br로 한번 띄움-->
+                            <p>BEYOND TECHNOLOGY</p>
+                        </div>
+                        <p class="sub" data-splitting>
+                            차별화된 다양한 제품과 솔루션을 통해 기술을 넘어 미래의 혁신을 이루겠습니다.
+                        </p>
                     </div>
-                    <p class="sub" data-splitting>
-                        차별화된 다양한 제품과 솔루션을 통해 기술을 넘어 미래의 혁신을 이루겠습니다.
-                    </p>
-                </div>
-                <div class="img"></div>
-            </li>
-            <li class="swiper-slide visual03">
-                <div class="txtBox">
-                    <div class="main" data-splitting>
-                        <p>PURSUE ALL YOUR</p><br>
-                        <p>AMBITIONS AND DREAMS</p>
+                    <div class="img"></div>
+                </li>
+                <li class="swiper-slide visual03">
+                    <div class="txtBox">
+                        <div class="main" data-splitting>
+                            <p>PURSUE ALL YOUR</p><br>
+                            <p>AMBITIONS AND DREAMS</p>
+                        </div>
+                        <p class="sub" data-splitting>
+                            다양한 첨단 제품 핵심소재 국산화를 위해 누구보다 먼저 앞장서겠습니다.
+                        </p>
                     </div>
-                    <p class="sub" data-splitting>
-                        다양한 첨단 제품 핵심소재 국산화를 위해 누구보다 먼저 앞장서겠습니다.
-                    </p>
+                    <div class="img"></div>
+                </li>
+            </ul>
+            <div class="pagination">
+                <div class="bullets">
+
                 </div>
-                <div class="img"></div>
-            </li>
-        </ul>
-        <div class="pagination">
-            <div class="bullets">
+                <div class="auto btns">
+                    <button class="btn btnStop"><i class="xi-pause-circle-o"></i></button>
+                    <button class="btn btnPlay"><i class="xi-play-circle-o"></i></button>
+                </div>
+                <button class="btn btnPrev">
+                    <i class="xi-angle-left-min"></i>
+                </button>
+                <button class="btn btnNext">
+                    <i class="xi-angle-right-min"></i>
+                </button>
 
             </div>
-            <div class="auto btns">
-                <button class="btn btnStop"><i class="xi-pause-circle-o"></i></button>
-                <button class="btn btnPlay"><i class="xi-play-circle-o"></i></button>
-            </div>
-            <button class="btn btnPrev">
-                <i class="xi-angle-left-min"></i>
-            </button>
-            <button class="btn btnNext">
-                <i class="xi-angle-right-min"></i>
-            </button>
-
         </div>
-    </div>
-    <!-- mainVisual end -->
-    <div id="mainContents">
-        <section id="business">
+        <!-- mainVisual end -->
+        <!--<div id="mainContents">-->
+        <section class="section" id="business">
             <div class="table">
                 <div class="tableCell">
                     <div class="container clearFix">
@@ -306,7 +308,7 @@
             </div>
         </section>
         <!-- business end -->
-        <section id="rnd">
+        <section class="section" id="rnd">
             <div class="table">
                 <div class="tableCell">
                     <div class="container">
@@ -351,7 +353,7 @@
             </div>
         </section>
         <!-- rnd end -->
-        <section id="vision">
+        <section class="section" id="vision">
             <div class="table">
                 <div class="tableCell">
                     <div class="container">
@@ -407,7 +409,7 @@
             </div>
         </section>
         <!-- vision end -->
-        <section id="social">
+        <section class="section" id="social">
             <div class="table">
                 <div class="tableCell">
                     <div class="container">
@@ -419,7 +421,8 @@
                                 대한 인식하에 “재단법인 솔브레인 나눔재단”을 설립하였습니다.
                             </p>
                             <p>
-                                앞으로 장기적인 관점과 체계적인 추진계획을 통하여 각계각층의 구성원에게 기업의 <br>이윤을 환원하고, 함께하는 사회를 만드는데 일익을 담당할 것입니다.
+                                앞으로 장기적인 관점과 체계적인 추진계획을 통하여 각계각층의 구성원에게 기업의 <br>이윤을 환원하고, 함께하는 사회를 만드는데 일익을 담당할
+                                것입니다.
                             </p>
                             <a href="" class="viewMore">VIEW MORE<i class="xi-angle-right-min"></i></a>
                         </div>
@@ -428,7 +431,7 @@
             </div>
         </section>
         <!-- social end -->
-        <section id="media">
+        <section class="section" id="media">
             <div class="table">
                 <div class="tableCell">
                     <div class="container">
@@ -493,7 +496,7 @@
                 </div>
             </div>
         </section>
-        <section id="partners">
+        <section class="section fp-auto-height" id="partners">
             <div class="container">
                 <h2>계열회사</h2>
                 <div class="banner">
@@ -549,6 +552,7 @@
                 </div>
             </div>
         </section>
+        <!--</div>-->
     </div>
 </body>
 

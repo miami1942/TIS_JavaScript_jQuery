@@ -215,7 +215,9 @@
 }
 
 #mainVisual .pagination .bullets {
+    position: absolute;
     float: left;
+    top: -45px;
 }
 
 #mainVisual .pagination .btnPlay {
@@ -230,13 +232,13 @@
 #mainVisual .pagination .btnPrev {
     position: absolute;
     left: 0;
-    top: -7px;
+    top: -50px;
 }
 
 #mainVisual .pagination .btnNext {
     position: absolute;
-    right: 0;
-    top: -7px;
+    right: -48px;
+    top: -50px;
 }
 
 .container {

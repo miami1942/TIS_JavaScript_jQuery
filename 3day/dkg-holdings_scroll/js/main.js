@@ -27,11 +27,11 @@ var listMotion = {
     stagger: 0.05,
     duration: 1,
 }
-var happenMotion = gsap.timeline({
-    //delay: 2,
+var happenMotion = gsap.timeline({ //gsap 지샥에 대한 엑세스 포인트 지정
+    delay: 2, //첫번쨰 요소가 2초 늦게 나온다
 });
 var businessMotion = gsap.timeline({
-    paused: true,
+    paused: true, //일단 정지시키기
     //delay: 2,
 });
 var portfolioMotion = gsap.timeline({
@@ -41,22 +41,39 @@ var communityMotion = gsap.timeline({
     paused: true
 });
 
+happenMotion
+    .from("#happen .titleBox h2 .char", titleMainMotion)
+    .from("#happen .titleBox p .char", titleSubMotion)
+    .started = 1;
+businessMotion
+    .from("#business .titleBox h2 .char", titleMainMotion)
+    .from("#business .titleBox p .char", titleSubMotion)
+    .started = 0;
+portfolioMotion
+    .from("#portfolio .titleBox h2 .char", titleMainMotion)
+    .from("#portfolio .titleBox p .char", titleSubMotion)
+    .started = 0;
+communityMotion
+    .from("#community .titleBox h2 .char", titleMainMotion)
+    .from("#community .titleBox p .char", titleSubMotion)
+    .started = 0;
+
 var motionArray = [happenMotion, businessMotion, portfolioMotion, communityMotion]; //배열로 넣어서 글을 줄인다.
 //var total = $(".section").length;
-var index = 1;
 new fullpage("#main", { //세션을 둘러싸고있는 메인을 적어주면된다. 높이도 무조건 자동으로 꽉채운다.
     navigation: true,
-    navigationTooltips: ['HAPPEN', 'BUSINESS', 'PORTFOLIO', 'COMMUNITY'],
+    navigationTooltips: ['HAPPEN', 'BUSINESS', 'PORTFOLIO', 'COMMUNITY'], //버튼 설명보여주기
     showActiveTooltip: true,
     onLeave: function (origin, destination, direction) { //이거 집가서 해보기
         var idx = destination.index;
         console.log("idx", idx);
-        console.log("index", index);
-        if (idx < 4) {
-            if (index < 4) {
-                index++;
+        if (idx < 4) { //이거안쓰면 아래 footer 안나옴 targetMotion이 5번쨰라 if에서부터 문제가 발생
+            var targetMotion = motionArray[idx];
+            console.log(targetMotion.started);
+            if (targetMotion.started === 0) {
                 var targetMotion = motionArray[idx];
                 targetMotion.restart(true);
+                targetMotion.started = 1;
             }
         }
 
@@ -82,19 +99,6 @@ new fullpage("#main", { //세션을 둘러싸고있는 메인을 적어주면된
         */
     }, //destination이 위치값을 알려준다
 });
-
-happenMotion
-    .from("#happen .titleBox h2 .char", titleMainMotion)
-    .from("#happen .titleBox p .char", titleSubMotion);
-businessMotion
-    .from("#business .titleBox h2 .char", titleMainMotion)
-    .from("#business .titleBox p .char", titleSubMotion);
-portfolioMotion
-    .from("#portfolio .titleBox h2 .char", titleMainMotion)
-    .from("#portfolio .titleBox p .char", titleSubMotion);
-communityMotion
-    .from("#community .titleBox h2 .char", titleMainMotion)
-    .from("#community .titleBox p .char", titleSubMotion);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
