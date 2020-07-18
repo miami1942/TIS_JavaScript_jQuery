@@ -1,0 +1,16 @@
+슬라이더 동시적용
+
+https://developers.kakao.com/
+카카오맵 적용 https://apis.map.kakao.com/
+디벨로퍼 주소수정
+http://127.0.0.1
+http://localhost
+나중에 실제주소쓰면됨
+
+팝업창
+
+쿠키js  https://github.com/js-cookie/js-cookie
+
+
+
+

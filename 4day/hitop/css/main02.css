@@ -8,12 +8,17 @@
     overflow: hidden;
 }
 
+#mainVisual .visualList li {
+    position: relative;
+    height: 100vh;
+}
+
 #mainVisual .visualList li .img {
     height: 100vh;
     text-indent: -9999px;
-    background-size: cover;
-    background-position: 50% 50%;
 }
+
+
 
 /* #mainVisual .visualList li:nth-child(1) {background-image: url("../images/main/main_visual_01.jpg");}
 #mainVisual .visualList li:nth-child(2) {background-image: url("../images/main/main_visual_02.jpg");}
@@ -31,14 +36,24 @@
     background-image: url("../images/main/main_visual_03.jpg");
 }
 
+#mainVisual .visualList li .imgMask {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
 #mainVisual .visualList li .img {
-    transform: scale(1) rotate(0.01deg);
-    transition: all 3s;
-    transition-delay: 1.1s;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-size: cover;
 }
 
 #mainVisual .visualList li.swiper-slide-active .img {
     transform: scale(1.2);
+    transition: all 100s;
 }
 
 #mainVisual button {
@@ -68,23 +83,28 @@
 
 */
 
-#mainVisual .slogan {
+#mainVisual .txtMotion {
     position: absolute;
+    height: 100%;
     width: 100%;
-    top: 40%;
-    color: #fff;
-    text-align: center;
+    left: 0;
+    top: 0;
     z-index: 2;
 }
 
-#mainVisual .slogan .main {
-    font-size: 64px;
-    font-weight: 700;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+#mainVisual .mainCopy {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 2;
 }
 
-#mainVisual .slogan .sub {
-    font-size: 24px;
+#mainVisual .mainCopy strong {
+    font-size: 75px;
+    font-weight: 700;
 }
 
 #mainVisual .pagination {
@@ -352,7 +372,7 @@ width:100px;
 #news .pagination .swiper-pagination-current {
     /* 3/6 글씨관련 */
     font-size: 36px;
-    font-weight: 70px;
+    font-weight: 700px;
 }
 
 #news .btnPrev {
@@ -361,28 +381,6 @@ width:100px;
 
 #news .btnNext {
     right: -40px;
-}
-
-#news .sample {
-    position: absolute;
-}
-
-#news .sample .li {
-    width: 40px;
-    padding: 40px;
-    background-color: #888;
-    color: #fff;
-}
-
-#news .sample .main {
-    font-size: 30px;
-    font-weight: 70;
-    margin-bottom: 20px;
-}
-
-#news .sample .sub {
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 #customer {
@@ -434,8 +432,7 @@ width:100px;
     font-weight: bold;
     overflow: hidden;
     background: #d95050;
-    background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right
-        14px center;
+    background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
 }
 
 .customoverlay .title {

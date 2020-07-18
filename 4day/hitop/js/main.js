@@ -114,3 +114,57 @@ slogan.from("#mainVisual .slogan .main .char", { //""안에있는것들은 그 �
   ease: "back", //모션을 쉽게 취하는 방정식 greenshock ease visualizer에서 제공한다.
 });
 */
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//팝업 및 쿠카
+
+
+gsap.fromTo("#popup", {
+  top: -400
+}, {
+  top: 50,
+  ease: "back",
+  duration: 1,
+  delay: 1,
+});
+$("#popup .btnClose").on("click", function () {
+  gsap.to("#popup", {
+    top: -400,
+    duration: 1,
+    ease: "back.in",
+    onComplete: function () {
+      $("#popup").remove();
+    }
+  });
+});
+
+$("#popup .btnOneday").on("click", function () {
+  Cookies.set('popup1', 'one', {
+    expires: 1
+  });
+  gsap.to("#popup", {
+    top: -400,
+    duration: 1,
+    ease: "back.in",
+    onComplete: function () {
+      $("#popup").remove();
+    }
+  });
+});
+
+if (Cookies.get("popup1") === "one") {
+  $("#popup").remove();
+} else {
+  $("#popup").show();
+};
+
+//테스트용 쿠키지우기 버튼
+$("#header #logo").on("click", function () {
+  Cookies.remove("popup1");
+})
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
