@@ -33,11 +33,13 @@ let imgSearch = function () {
 };
 
 $(".searchBox .btn").on("click", function () {
+  page = 1;
   $("#thumbs ul li").html("");
   imgSearch();
 });
 
 $("#imgSearch").on("keyup", function (e) {
+  page = 1;
   if (e.keyCode === 13) {
     $("#thumbs ul li").html("");
     imgSearch();
