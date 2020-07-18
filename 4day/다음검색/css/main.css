@@ -1,0 +1,460 @@
+#mainVisual {
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+#mainVisual .mask {
+    overflow: hidden;
+}
+
+#mainVisual .visualList li .img {
+    height: 100vh;
+    text-indent: -9999px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* #mainVisual .visualList li:nth-child(1) {background-image: url("../images/main/main_visual_01.jpg");}
+#mainVisual .visualList li:nth-child(2) {background-image: url("../images/main/main_visual_02.jpg");}
+#mainVisual .visualList li:nth-child(3) {background-image: url("../images/main/main_visual_03.jpg");} */
+
+#mainVisual .visualList .visual01 .img {
+    background-image: url("../images/main/main_visual_01.jpg");
+}
+
+#mainVisual .visualList .visual02 .img {
+    background-image: url("../images/main/main_visual_02.jpg");
+}
+
+#mainVisual .visualList .visual03 .img {
+    background-image: url("../images/main/main_visual_03.jpg");
+}
+
+#mainVisual .visualList li .img {
+    transform: scale(1) rotate(0.01deg);
+    transition: all 3s;
+    transition-delay: 1.1s;
+}
+
+#mainVisual .visualList li.swiper-slide-active .img {
+    transform: scale(1.2);
+}
+
+#mainVisual button {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+#mainVisual .btnPrev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 3;
+}
+
+#mainVisual .btnNext {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 3;
+}
+
+/* 
+    inline-block 처리 기법을 쓸 때 
+    주로 자식의 넓이가 가변적일때 즉 넓이를 따로 지정을 할 수 없을때 inline-block 기법을 쓴다.
+
+*/
+
+#mainVisual .slogan {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+#mainVisual .slogan .main {
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mainVisual .slogan .sub {
+    font-size: 24px;
+}
+
+#mainVisual .pagination {
+    position: absolute;
+    bottom: 250px;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+#mainVisual .pagination .auto i {
+    font-size: 30px;
+    color: #fff;
+}
+
+#mainVisual .pagination .auto .btnAuto {
+    display: none;
+}
+
+#mainVisual .pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 100px;
+    transition: all 0 25s;
+    outline: none;
+}
+
+#mainVisual .pagination .swiper-pagination-bullet-active {
+    background-color: white;
+    width: 80px;
+}
+
+/*#mainVisual .swiper-pagination-bullet {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 1000px;
+    background: transparent;
+    border: 3px solid #fff;
+    margin: 0 5px;
+    opacity: 1;
+    transition: 0.25s ease-out;
+    outline: none;
+    box-sizing: border-box;
+}
+#mainVisual .swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 60px;
+}*/
+/* #mainVisual .pagination {position: absolute;bottom:250px;z-index: 2;
+text-align:center;width:100%;
+}
+#mainVisual .swiper-pagination-bullet {width:20px;height:20px;opacity:1;
+background: none;border:3px solid #fff;margin:0 5px; border-radius:100px;
+transition:all 0.5s;
+}
+#mainVisual .swiper-pagination-bullet-active {background-color: #fff;
+width:100px;
+} */
+
+/* mainMenu */
+#mainMenu {
+    margin: -70px auto 70px;
+    position: relative;
+    z-index: 3;
+}
+
+#mainMenu li {
+    float: left;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+#mainMenu li:nth-child(2) {
+    margin-top: -100px;
+}
+
+#mainMenu li .txt {
+    position: absolute;
+    left: 45px;
+    bottom: 60px;
+    z-index: 2;
+}
+
+#mainMenu li .txt p {
+    font-size: 18px;
+}
+
+#mainMenu li .txt h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+#mainMenu li .bg {
+    transition: all 0.2s;
+}
+
+#mainMenu li:after {
+    content: "";
+    display: block;
+    border: 1px solid #f00;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#mainMenu li:hover:after {
+    opacity: 1;
+}
+
+#mainMenu li:hover .bg {
+    transform: scale(1.2);
+}
+
+#business {
+    background-image: url("../images/main/bg_business.jpg");
+    background-color: #d9d9d9;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 100px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.titleBox {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titleBox h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.titleBox p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#business .container li {
+    float: left;
+    position: relative;
+    color: #fff;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#business .container li:nth-child(2n + 1) {
+    margin-left: 0;
+}
+
+#business .container li .txt {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+
+#business .container li .txt h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#business .container li .txt p {
+    font-size: 18px;
+}
+
+#news {
+    padding: 100px 0;
+}
+
+#news .container {
+    position: relative;
+}
+
+#news ul li {
+    float: left;
+    width: 330px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+
+#news ul li.swiper-slide-active {
+    opacity: 1;
+}
+
+#news ul li:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    border-color: #f00;
+}
+
+#news ul li img {
+    width: 100%;
+}
+
+#news ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+#news ul li .txtBox {
+    padding: 30px;
+}
+
+#news ul li .txtBox h3 {
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+#news ul li .txtBox .txt {
+    line-height: 1.5;
+    height: 4.5em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+
+#news .mask {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+#news button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 36px;
+    outline: none;
+    border: none;
+    line-height: 80px;
+    text-align: center;
+    top: 50%;
+    z-index: 2;
+}
+
+#news .pagination {
+    text-align: right;
+    font-size: 20px;
+}
+
+#news .pagination .swiper-pagination-current {
+    /* 3/6 글씨관련 */
+    font-size: 36px;
+    font-weight: 70px;
+}
+
+#news .btnPrev {
+    left: -40px;
+}
+
+#news .btnNext {
+    right: -40px;
+}
+
+#news .sample {
+    position: absolute;
+}
+
+#news .sample .li {
+    width: 40px;
+    padding: 40px;
+    background-color: #888;
+    color: #fff;
+}
+
+#news .sample .main {
+    font-size: 30px;
+    font-weight: 70;
+    margin-bottom: 20px;
+}
+
+#news .sample .sub {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#customer {
+    padding: 100px 0;
+    background-image: url("../images/main/bg_customer.jpg");
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+#customer .titleBox {
+    color: #fff;
+}
+
+#customer .btnEstimate {
+    display: inline-block;
+    color: #fff;
+    background-image: linear-gradient(45deg, #faa14d, #c31714);
+    padding: 20px 60px;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#location {
+    padding-top: 100px;
+}
+
+.customoverlay {
+    position: relative;
+    bottom: 85px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ddd;
+    float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+    border: 0;
+    box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    background: #d95050;
+    background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right
+        14px center;
+}
+
+.customoverlay .title {
+    display: block;
+    text-align: center;
+    background: #fff;
+    margin-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.customoverlay:after {
+    content: "";
+    position: absolute;
+    margin-left: -12px;
+    left: 50%;
+    bottom: -12px;
+    width: 22px;
+    height: 12px;
+    background: url("http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
+}

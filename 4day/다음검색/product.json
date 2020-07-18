@@ -1,0 +1,18 @@
+{
+    "productList": [{
+            "name": "새우깡",
+            "price": 1000,
+            "stock": 20
+        },
+        {
+            "name": "초코송이",
+            "price": 2000,
+            "stock": 30
+        },
+        {
+            "name": "고래밥",
+            "price": 1500,
+            "stock": 100
+        }
+    ]
+}

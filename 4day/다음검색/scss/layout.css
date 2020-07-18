@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+#header {
+  text-align: center;
+}
+
+#header * {
+  vertical-align: middle;
+}
+
+#header h1 {
+  display: inline-block;
+}
+
+#header .searchBox {
+  display: inline-block;
+}
+
+#header .searchBox .search {
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 60px;
+}
+
+#header .searchBox .search input {
+  height: 40px;
+  border: none;
+  min-width: 250px;
+  padding: 0;
+}
+
+#header .searchBox .btn {
+  height: 60px;
+  border: 1px solid #ccc;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  min-width: 60px;
+}

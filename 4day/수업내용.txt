@@ -13,4 +13,32 @@ http://localhost
 
 
 
+scss설정 https://github.com/ritwickdey/vscode-live-sass-compiler/blob/master/docs/settings.md
+
+다음 검색기능
+자이콘xeicon
+https://material.io/resources/icons/?style=baseline
+구글아이콘테마
+
+확장자
+Remove empty lines 줄지우기?
+PostCSS Sorting css바꿔주는것
+
+라이브 사스컴퍼일러들어가서 세팅스.json 들어가기
+@ext:ritwickdey.live-sas
+
+폰트변환
+무료폰트https://noonnu.cc/
+
+비동기처리
+https://api.jquery.com/category/ajax/shorthand-methods/
+
+` 백틱을 잘 활용하자
+
+https://fancyapps.com/fancybox/3/
+
+공공데이터포털 참고
+
+
+json으로 데이터 활용하기
 

@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+//패딩이랑 보더로 높이 결정
+#header {
+    text-align: center;
+
+    * {
+        vertical-align: middle;
+    }
+
+    h1 {
+        display: inline-block;
+    }
+
+    .searchBox {
+        display: inline-block;
+
+        .search {
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            height: 60px;
+
+            input {
+                height: 40px;
+                border: none;
+                min-width: 250px;
+                padding: 0;
+            }
+        }
+
+        .btn {
+            height: 60px;
+            border: 1px solid #ccc;
+            background: none;
+            outline: none;
+            border-radius: 10px;
+            min-width: 60px;
+        }
+    }
+}
+
+#thumbs {
+    width: 840px;
+    margin: 100px auto;
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+            margin: 5px;
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .btns {
+        text-align: center;
+        margin-top: 50px;
+        .btnMore {
+            display: none;
+            outline: none;
+            border: 1px solid #ccc;
+            width: 180px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 100px;
+            background-color: #fff;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

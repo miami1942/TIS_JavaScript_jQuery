@@ -1,0 +1,221 @@
+body {
+    font-family: "Noto Sans KR", "Apple SD Gothic Neo", "AppleSDGothicNeo-Regular", "맑은 고딕", "Malgun Gothic", Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* #logo,#utilMenu {position:absolute;}
+#logo {left:0;top:0;}
+#utilMenu {right:0;top:0;}
+
+#gnb {text-align: center;}
+#gnb .list {display:inline-block;}
+#gnb .list > li  {outline:1px solid #f00;float:left;}
+#gnb .list > li .depth01 {font-size:18px;font-weight:bold;display:block;padding-left:60px;padding-right:60px;padding-top:35px;height:55px; outline:1px solid #00f;} */
+/* inline은 넓이 높이를 가질 수 없는 형태 */
+/* inline-block은 넓이 높이를 가지는 inline형태 즉 block과 inline의 장점을 둘 다 가질 수 있다. */
+
+
+/* 모든 태그는 box model을 가진다.
+그리고 모든 태그는 display형태(block/inline)를 가지고 태어난다. */
+
+
+/* 1. block 요소들을 옆으로 나열해 보자...
+header,footer,div,li,ul 등등
+a,span,strong,img,iframe,input 등을 제외한 나머지것들.. */
+
+/* 이것은 inline-block을 이용한 가운데 정렬방법 */
+/* #gnb .list {text-align:center; font-size:0;}
+#gnb .list > li {display:inline-block;outline:1px solid #f00;vertical-align:top;
+    font-size:16px;
+} */
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 91px;
+    color: #fff;
+    transition: height 0.5s, background-color 0.5s;
+    z-index: 999;
+}
+
+#header.on #gnb {
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+#gnb {
+    text-align: center;
+    height: 90px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/*히든이 걸려야 90일때 짤린다.*/
+#gnb .list {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#gnb .list>li {
+    float: left;
+}
+
+#gnb .list>li .depth01 {
+    font-size: 20px;
+    font-weight: 900;
+    display: block;
+    height: 90px;
+    line-height: 90px;
+    padding: 0 60px;
+    /* padding-left:60px;padding-right:60px;padding-top:30px;padding-bottom: 30px; */
+}
+
+#gnb .list>li:hover .depth02 {
+    display: block;
+    height: 300px;
+    background-color: #bf0c14;
+}
+
+#gnb .list>li:hover .depth01 {
+    background-color: #bf0c14;
+}
+
+#gnb .list .depth02 {
+    padding: 15px 0 25px;
+}
+
+#gnb .list .depth02 li a {
+    display: block;
+    padding: 10px 0;
+}
+
+#logo {
+    position: absolute;
+    left: 100px;
+    top: 24px;
+}
+
+#utilMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.clearFix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#mainVisual {
+    height: 1100px;
+    background-image: url("../images/main/main_visual_01.jpg");
+    color: #fff;
+}
+
+#mainVisual button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+#mainVisual .btnPrev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+#mainVisual .btnNext {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+/* 
+    inline-block 처리 기법을 쓸 때 
+    주로 자식의 넓이가 가변적일때 즉 넓이를 따로 지정을 할 수 없을때 inline-block 기법을 쓴다.
+
+*/
+
+#mainVisual .mainCopy {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    out line: 1px solid #f00;
+}
+
+#mainVisual .mainCopy strong {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+
+/* 중앙정렬하고 위치도 옮겨 놓는다.
+mainVisual 안에 있는 폰트의 크기를 22px로 하고 줄간격은 1.5로 한다.
+그중에 strong의 크기는 75px로 한다. strong의 두께는 700으로 한다. */
+
+#utilMenu {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    z-index: 3;
+}
+
+#utilMenu .btnOnline {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    width: 110px;
+}
+
+#utilMenu .btnAll {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 0;
+    height: 22px;
+    width: 30px;
+}
+
+#utilMenu .btnAll span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#utilMenu .btnAll span:nth-child(1) {
+    top: 0;
+}
+
+#utilMenu .btnAll span:nth-child(2) {
+    top: 10px;
+}
+
+#utilMenu .btnAll span:nth-child(3) {
+    top: 20px;
+}

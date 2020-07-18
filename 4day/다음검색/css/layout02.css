@@ -1,0 +1,185 @@
+
+body {
+    font-size: 16px;
+    color:#333333;
+    font-family:"Lato","Noto Sans KR","Apple SD Gothic Neo","AppleSDGothicNeo-Regular","맑은 고딕","Malgun Gothic",Arial,  sans-serif;
+}
+a {
+    color:inherit;
+    text-decoration: none;
+}
+img {vertical-align: top;}
+/* #logo,#utilMenu {position:absolute;}
+#logo {left:0;top:0;}
+#utilMenu {right:0;top:0;}
+
+#gnb {text-align: center;}
+#gnb .list {display:inline-block;}
+#gnb .list > li  {outline:1px solid #f00;float:left;}
+#gnb .list > li .depth01 {font-size:18px;font-weight:bold;display:block;padding-left:60px;padding-right:60px;padding-top:35px;height:55px; outline:1px solid #00f;} */
+/* inline은 넓이 높이를 가질 수 없는 형태 */
+/* inline-block은 넓이 높이를 가지는 inline형태 즉 block과 inline의 장점을 둘 다 가질 수 있다. */
+
+
+/* 모든 태그는 box model을 가진다.
+그리고 모든 태그는 display형태(block/inline)를 가지고 태어난다. */
+
+
+/* 1. block 요소들을 옆으로 나열해 보자...
+header,footer,div,li,ul 등등
+a,span,strong,img,iframe,input 등을 제외한 나머지것들.. */
+
+/* 이것은 inline-block을 이용한 가운데 정렬방법 */
+/* #gnb .list {text-align:center; font-size:0;}
+#gnb .list > li {display:inline-block;outline:1px solid #f00;vertical-align:top;
+    font-size:16px;
+} */
+
+#header {position: fixed;color:#fff;width:100%;height:90px;z-index:999;
+transition: all 0.5s;
+}
+#header.on {background-color: rgba(0,0,0,0.5);
+box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+#header:after {display:block; position: absolute;top:90px;content:"";width:100%;height:1px; background-color: #fff;}
+#header.on:after {display: none;}
+#gnb {position: relative;text-align: center;z-index: 2;}
+#gnb .list {display:inline-block;margin:0 auto;}
+#gnb .list > li {float:left;position: relative;}
+#gnb .list > li .depth01 {
+    display:block;
+    position: relative;
+    padding:0 60px;font-size:20px;
+    line-height:90px;font-weight: 900;
+    height:90px;
+    
+/* padding-left:60px;padding-right:60px;padding-top:30px;padding-bottom: 30px; */
+}
+#gnb .list > li .depth01:after {display:block;position: absolute;right:20px;bottom:-2px;left:20px;content:"";background-color: #fff;z-index: 2;height:3px;
+    transform: scaleX(0);
+    transition:all 0.2s;
+}
+
+
+
+#gnb .list > li:hover .depth01 {}
+#gnb .list > li:hover .depth01:after {
+    
+}
+#gnb .list .depth02 {padding:15px 0 25px;color: #fff; background-color: #bf0c14;border-radius:20px;
+    position: absolute;
+    width:100%;
+    top:120px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+#gnb .list > li:hover .depth02 {
+    opacity: 1;
+    top:90px;
+    pointer-events: auto;
+}
+
+#header.on #gnb .list > li:hover {}
+#header.on .btnOnline {}
+#header.on .btnAll span {}
+
+
+#gnb .list .depth02 li a {display: block; padding:10px 0;}
+#logo {position:absolute;top:24px;left:100px;z-index: 3;}
+#utilMenu {position:absolute;top:0;right:100px;z-index: 3;}
+#utilMenu .btnOnline {
+    display:block;
+    position: absolute;top:20px;right:50px;    padding:15px 30px;    border:2px solid #fff;
+    border-radius:100px;
+    width:110px;
+}
+#utilMenu .btnAll {
+    display:block;
+    position: absolute;
+    top: 34px;
+    right:0;
+    height:22px;
+    width:30px;
+}
+#utilMenu .btnAll span {
+    display:block;
+    position: absolute;
+    width:30px;height:2px;background-color: #fff;
+}
+#utilMenu .btnAll span:nth-child(1) {top:0;}
+#utilMenu .btnAll span:nth-child(2) {top:10px;}
+#utilMenu .btnAll span:nth-child(3) {top:20px;}
+
+.container:after,  .clearFix:after , ul:after {display:block;content:"";clear:both;}
+
+#footer {color: #fff;background-color: #444;}
+#footer .utilMenu {padding:20px 0;text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);}
+#footer .utilMenu ul {display: inline-block;}
+#footer .utilMenu ul li {padding:0 20px;float: left;border-left:1px solid rgba(255,255,255,0.2);}
+#footer .utilMenu ul li:nth-child(1) {border-left: none;}
+
+#footer #address {padding:50px 0;}
+#footer #address .fLogo {float: left;}
+#footer #address address {margin-left: 50px;font-size: 14px;line-height: 1.5;float: left;}
+#footer #address address dl {margin-bottom: 20px;}
+#footer #address address dt {display:inline;}
+#footer #address address dt:after {display: inline-block;margin:0 10px;content:":";}
+#footer #address address dd {display:inline;}
+#footer #address address dd:after {display:inline-block;margin: 0 15px;content:"/";}
+#footer #address address .newline:before {display: inline;content:"\A"; white-space: pre;}
+#footer #address .tel {float: right;}
+#footer #address .tel dd {margin-top: 10px;font-size: 38px; font-weight: 700;}
+
+
+.btnTop {
+    position: fixed;right:100px;bottom:-100px;z-index: 99;
+    transition: 0.25s ease-out;
+    transform:translateY(50%);
+}
+.btnTop.on {
+    bottom:245px;
+}
+
+
+
+/* popup */
+#popup {
+    display: none;
+    position: fixed;
+    top:50px;
+    left:50px;
+    padding:10px;
+    z-index: 99999;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+#popup .contents {
+    min-width: 400px;
+    min-height: 300px;
+    background-color: #da0a0a;
+}
+#popup .btns {
+    padding-top: 10px;
+    text-align: right;
+}
+#popup .btns button {
+    display: inline-block;
+    background-color: #000;
+    color:#fff;
+    padding:5px 10px;
+}
+
+.cover {
+    display: none;
+    position: fixed;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 999999;
+}
+
