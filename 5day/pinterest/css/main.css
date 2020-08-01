@@ -1,0 +1,27 @@
+body { background-color: #333333; font-family: 'Noto Sans KR', sans-serif; }
+
+h1 { font-size: 48px; font-weight: 100; color: #fff; text-align: center; margin-top: 100px; }
+
+#main { width: 1200px; margin: 100px auto; }
+
+#main ul::after { content: ''; display: block; clear: both; }
+
+#main ul li { width: calc(24% - 10px); margin: 0.5%; float: left; }
+
+#main ul li a { text-decoration: none; color: #111; padding: 10px; display: block; background-color: #fff; }
+
+#main ul li a .imgBox { overflow: hidden; }
+
+#main ul li a .imgBox img { width: 100%; }
+
+#main ul li a .desc { padding: 10px; }
+
+#main ul li a .desc h2 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+
+#main ul li a .desc p { line-height: 1.5; }
+
+.filter { margin-top: 100px; text-align: center; font-size: 0; }
+
+.filter li { display: inline-block; background-color: #000; color: #fff; width: 150px; height: 40px; line-height: 40px; border-radius: 100px; font-size: 16px; text-transform: uppercase; margin: 0 5px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-transition: all 0.25s; transition: all 0.25s; cursor: pointer; }
+
+.filter li.on { background-color: red; }

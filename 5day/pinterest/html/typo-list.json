@@ -1,0 +1,184 @@
+{
+    "list":[
+        {
+            "imgsrc":"../images/01.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/02.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/03.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/04.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/05.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/06.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/07.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/08.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/09.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/10.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/11.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/12.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/13.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/14.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/15.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/16.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/17.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/18.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/19.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/20.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/21.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/22.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/23.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/24.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/25.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/26.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"paint"
+        },
+        {
+            "imgsrc":"../images/27.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/28.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"typography"
+        },
+        {
+            "imgsrc":"../images/29.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        },
+        {
+            "imgsrc":"../images/30.jpg",
+            "title":"to the man",
+            "desc":"Lorem ipsum dolor sit, amet consectetur.",
+            "type":"digital"
+        }
+    ]
+}

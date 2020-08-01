@@ -1,0 +1,26 @@
+세팅
+"liveSassCompile.settings.formats": [
+        // This is Default.
+        // {
+        //     "format": "expanded",
+        //     "extensionName": ".css",
+        //     "savePath": "~/../css/"
+        // },
+        // Or you can compress your css
+        {
+            "format": "compact",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "liveSassCompile.settings.generateMap":false,
+    "liveSassCompile.settings.includeItems":[
+        "~/*.scss"
+    ]
+
+pinterest layout css
+masonry layout
+* isotope js *
+images loaded js
+클릭하면 화면 커지는것
+https://fancyapps.com/fancybox/3/
