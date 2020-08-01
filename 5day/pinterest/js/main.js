@@ -1,3 +1,4 @@
+Splitting();
 $.ajax({ //$.ajax("typo-list.json")//이것도 가능
         url: "typo-list.json"
     })
@@ -44,5 +45,95 @@ $.ajax({ //$.ajax("typo-list.json")//이것도 가능
                         filter: `.${filter_text}`
                     })
                 })
-            });
+                $("#main li").on("mouseenter", function () {
+                    $(".cursor").addClass("on");
+                    gsap.to(".cursor", {
+                        scale: 5,
+                        ease: "elastic",
+                        duration: 1
+                    })
+                });
+                $("#main li").on("mouseleave", function () {
+                    $(".cursor").removeClass("on");
+                    gsap.to(".cursor", {
+                        scale: 1,
+                        ease: "elastic",
+                        duration: 1
+                    })
+                });
+                var time = gsap.timeline();
+                time.from("h1 .char", {
+                        x: 100,
+                        opacity: 0,
+                        ease: "back.out",
+                        stagger: 0.1,
+                    })
+                    .from(".filter li", {
+                        x: 100,
+                        opacity: 0,
+                        ease: "back.out",
+                        stagger: 0.1,
+                    })
+            })
+
     });
+$(window).on("mousemove", function (e) {
+    //console.log(e);
+    gsap.to(".cursor", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        ease: "power4"
+    });
+    gsap.to(".cursor_follow1", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        duration: 1.8,
+        ease: "power4"
+    })
+    /*
+    gsap.to(".cursor_follow2", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        duration: 2.1,
+        ease: "power4"
+    })
+    gsap.to(".cursor_follow3", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        duration: 2.4,
+        ease: "power4"
+    })
+    gsap.to(".cursor_follow4", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        duration: 2.7,
+        ease: "power4"
+    })
+    gsap.to(".cursor_follow5", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        duration: 3.0,
+        ease: "power4"
+    })
+    gsap.to(".cursor_follow6", {
+        //x: e.pageX,
+        //y: e.pageY,
+        x: e.clientX,
+        y: e.clientY,
+        duration: 3.3,
+        ease: "power4"
+    })
+    */
+})

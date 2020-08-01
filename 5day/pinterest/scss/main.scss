@@ -1,3 +1,7 @@
+* {
+    cursor: none !important; //임폴턴트는 최우선처리하라
+}
+
 body {
     background-color: #333333;
     font-family: 'Noto Sans KR', sans-serif;
@@ -77,7 +81,7 @@ h1 {
         text-transform: uppercase;
         margin: 0 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-        transition: all 0.25s;
+        transition: background-color 0.25s;
         cursor: pointer;
 
         &.on {
@@ -85,3 +89,130 @@ h1 {
         }
     }
 }
+
+.cursor {
+    //마우스 움직이기
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    mix-blend-mode: difference;
+    user-select: none;
+
+    &.on {
+        background: url("../images/bgCursor.png") no-repeat 50% #fff;
+        background-size: 80%;
+        mix-blend-mode: normal;
+    }
+}
+
+.cursor_follow1 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+/*
+.cursor_follow2 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow3 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow4 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow5 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow6 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+*/

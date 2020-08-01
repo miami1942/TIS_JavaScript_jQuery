@@ -1,3 +1,6 @@
+@charset "UTF-8";
+* { cursor: none !important; }
+
 body { background-color: #333333; font-family: 'Noto Sans KR', sans-serif; }
 
 h1 { font-size: 48px; font-weight: 100; color: #fff; text-align: center; margin-top: 100px; }
@@ -22,6 +25,99 @@ h1 { font-size: 48px; font-weight: 100; color: #fff; text-align: center; margin-
 
 .filter { margin-top: 100px; text-align: center; font-size: 0; }
 
-.filter li { display: inline-block; background-color: #000; color: #fff; width: 150px; height: 40px; line-height: 40px; border-radius: 100px; font-size: 16px; text-transform: uppercase; margin: 0 5px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-transition: all 0.25s; transition: all 0.25s; cursor: pointer; }
+.filter li { display: inline-block; background-color: #000; color: #fff; width: 150px; height: 40px; line-height: 40px; border-radius: 100px; font-size: 16px; text-transform: uppercase; margin: 0 5px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-transition: background-color 0.25s; transition: background-color 0.25s; cursor: pointer; }
 
 .filter li.on { background-color: red; }
+
+.cursor { width: 20px; height: 20px; background-color: #fff; border-radius: 100%; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: fixed; left: 0; top: 0; z-index: 1000; pointer-events: none; mix-blend-mode: difference; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.cursor.on { background: url("../images/bgCursor.png") no-repeat 50% #fff; background-size: 80%; mix-blend-mode: normal; }
+
+.cursor_follow1 { width: 17px; height: 17px; background-color: #fff; border-radius: 100%; -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: fixed; left: 0; top: 0; z-index: 1000; pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; opacity: 0.5; }
+
+/*
+.cursor_follow2 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow3 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow4 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow5 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+
+.cursor_follow6 {
+    //마우스 움직이기
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none; //클릭가능
+    user-select: none;
+    opacity: 0.5;
+}
+*/

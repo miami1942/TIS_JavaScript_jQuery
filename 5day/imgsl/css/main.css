@@ -1,0 +1,13 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-size: 16px; color: #111; }
+
+a { text-decoration: none; color: inherit; }
+
+#view { width: 100vw; height: 100vh; overflow: hidden; position: relative; }
+
+#view:after { content: ''; display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+#view img { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 90%; }
+
+#drag { position: absolute; bottom: 100px; width: 800px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
