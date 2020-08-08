@@ -1,0 +1,54 @@
+{
+    "mario":[
+        {
+            "imgSrc":"../images/supermario01.png",
+            "title":"FLYING MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario02.png",
+            "title":"CAT MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario03.png",
+            "title":"FIREBALL MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario04.png",
+            "title":"RUNNING MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario05.png",
+            "title":"RACOON MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario01.png",
+            "title":"FLYING MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario02.png",
+            "title":"CAT MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario03.png",
+            "title":"FIREBALL MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario04.png",
+            "title":"RUNNING MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        },
+        {
+            "imgSrc":"../images/supermario05.png",
+            "title":"RACOON MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat."
+        }
+    ]
+}

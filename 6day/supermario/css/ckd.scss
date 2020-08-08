@@ -1,0 +1,148 @@
+* {
+    padding:0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color:inherit;
+    text-decoration: none;
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+.wrap {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100vw;
+    height: 100vh;
+    #logo {
+        position: absolute;
+        width:100%;
+        top:30px;
+        left:0;
+        text-align: center;
+    }
+    .video {
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+        video {
+            position: absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gnbWrap {
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+        #gnb {
+            > ul {
+                > li {
+                    width:20%;
+                    height: 100vh;
+                    float: left;
+                    color:#fff;
+                    position: relative;
+                    &:nth-child(1) .bg .inner {background-image: url("../images/ckd/visual01.jpg");}
+                    &:nth-child(2) .bg .inner {background-image: url("../images/ckd/visual02.jpg");}
+                    &:nth-child(3) .bg .inner {background-image: url("../images/ckd/visual03.jpg");}
+                    &:nth-child(4) .bg .inner {background-image: url("../images/ckd/visual04.jpg");}
+                    &:nth-child(5) .bg .inner {background-image: url("../images/ckd/visual05.jpg");}
+                    &.right .bg {
+                        width:100%;
+                        left:auto;
+                        right:0;
+                        .inner {
+                            left:auto;
+                            right:0;
+                        }
+                    }
+                    &.left .bg {
+                        width:100%;
+                        left:0;
+                        right:auto;
+                        .inner {
+                            left:0;
+                            right:auto;
+                        }
+                    }
+                    &.rightOff .bg {
+                        width:0;
+                        left:auto;
+                        right:0;
+                        .inner {
+                            left:auto;
+                            right:0;
+                        }
+                    }
+                    &.leftOff .bg {
+                        width:0;
+                        left:0;
+                        right:auto;
+                        .inner {
+                            left:0;
+                            right:auto;
+                        }
+                    }
+                    
+                    .bg {
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        width:0;
+                        height: 100%;
+                        overflow: hidden;
+                        transition: all 0.5s ease;
+                        .inner {
+                            position: absolute;
+                            left:auto;
+                            right:0;
+                            top:0;
+                            height: 100%;
+                            width:320px;
+                            background-size: cover;
+                            background-position: 50%;
+                        }
+                    }
+                    .contents {
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                        padding: 0 40px;
+                        width:100%;
+                        z-index: 2;
+                        h2 {
+                            padding-bottom: 20px;
+                            border-bottom: 2px solid #fff;
+                            span {
+                                display: block;
+                                &.kor {
+                                    font-size: 32px;
+                                    font-weight: bold;
+                                }
+                                &.eng {
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                    margin-bottom: 10px;
+                                    opacity: 0.5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

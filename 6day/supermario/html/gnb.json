@@ -1,0 +1,119 @@
+{
+    "gnb": [{
+        "item0": {
+            "depth01": {
+                "title": "회사소개",
+                "link": "http://www.daum.net",
+                "target": "_blank"
+            },
+            "depth02": [{
+                    "title": "인사말",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "경영이념",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "오시는길",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                }
+            ]
+        },
+        "item1": {
+            "depth01": {
+                "title": "회사소개2",
+                "link": "http://www.daum.net",
+                "target": "_blank"
+            },
+            "depth02": [{
+                    "title": "인사말",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "경영이념",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "오시는길",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                }
+            ]
+        },
+        "item2": {
+            "depth01": {
+                "title": "회사소개3",
+                "link": "http://www.daum.net",
+                "target": "_blank"
+            },
+            "depth02": [{
+                    "title": "인사말",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "경영이념",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "오시는길",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                }
+            ]
+        },
+        "item3": {
+            "depth01": {
+                "title": "회사소개4",
+                "link": "http://www.daum.net",
+                "target": "_blank"
+            },
+            "depth02": [{
+                    "title": "인사말",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "경영이념",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "오시는길",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                }
+            ]
+        },
+        "item4": {
+            "depth01": {
+                "title": "회사소개5",
+                "link": "http://www.daum.net",
+                "target": "_blank"
+            },
+            "depth02": [{
+                    "title": "인사말",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "경영이념",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                },
+                {
+                    "title": "오시는길",
+                    "link": "http://www.daum.net",
+                    "target": "_blank"
+                }
+            ]
+        }
+    }]
+}

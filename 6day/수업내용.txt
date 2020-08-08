@@ -1,0 +1,18 @@
+wow.js
+
+countUp.js 무조건id써야한다 class 못씀
+countup.js cdn쓰자
+
+그린컴퓨터 아카데미 수강생포트폴리오
+http://www.greencom.co.kr/portfolio/portfolio.asp?s_kind=2
+
+perspective
+
+to는 어디로 보낸다 움직이는것 set은 시간이 없다
+append는 뒤로 밀어넣는것
+
+ctr shift r 강력 새로고침
+
+cheat seet
+
+유튜브 자바 제이슨
